@@ -4,7 +4,7 @@
 $(document).ready(function() {
 
     $('#fullpage').fullpage({
-        sectionsColor:['','#f7f9ff','#b0adb5','#f7f9ff','#b0adb5'],
+        sectionsColor:['#f9f9f7','#f7f9ff','#e3ecf5','#f9f9f7','#e3ecf5'],
         anchors: ['home', 'portfolio', 'about','skills', 'contact'],
         menu: '#navigation',
         onLeave: function(index, nextIndex, direction){

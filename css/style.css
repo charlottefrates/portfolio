@@ -42,10 +42,12 @@ body {
 .landing-call h1 {
     font-family: 'Playfair Display SC', serif;
     font-size: 50pt;
+    position: absolute;
 }
 
 .landing-call p{
   font-size: 18pt;
+  position: absolute;
 }
 
 .portfolio {
@@ -55,6 +57,7 @@ body {
 
 .about {
     text-align: center;
+
 }
 
 .about .prof-shot {
@@ -213,24 +216,51 @@ margin-top: 5%;
 }
 
 #name {
-  animation-duration: 1s;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
 }
 
-#subName{
-  animation-duration: 1.5s;
-  animation-delay: 1s;
-  animation-iteration-count: 1;
+
+#brain{
+      height: 1000px;
+}
+
+#scientist{
+float: left;
+margin-top: 20%;
+opacity: 1;
+position: absolute;
+width: 250px;
+height: 600px;
+animation-duration: 1s;
+animation-delay: 0s;
+animation-iteration-count: 1;
+}
+
+#scientist:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#coder-desc{
+margin-left: 80%;
+margin-top: 20%;
+opacity: 1;
+position: absolute;
+width: 300px;
+height: 600px;
+animation-duration: 2s;
+animation-delay: 0s;
+animation-iteration-count: 1;
 
 }
 
-#contacts{
-  animation-duration: 2s;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-
+#coder-desc:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
+
 
 .entrance{
   animation-duration: 3s;
