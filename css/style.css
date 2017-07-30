@@ -225,6 +225,20 @@ margin-top: 5%;
 
 }
 
+#contacts{
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+
+}
+
+.entrance{
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+
+}
+
 
 .portfolio .slide-one > .fp-tableCell h3,
 .portfolio .slide-one > .fp-tableCell img,
@@ -249,6 +263,8 @@ margin-top: 5%;
 .portfolio.active .slide-one.active > .fp-tableCell p + p {
 	transition-delay: .44s;
 }
+
+/*
 
 .about > .fp-tableCell h3,
 .about > .fp-tableCell p {
@@ -290,3 +306,4 @@ margin-top: 5%;
 .contact > .fp-tableCell i + i{
 	transition-delay: .66s;
 }
+*/
