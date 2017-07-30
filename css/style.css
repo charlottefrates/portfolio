@@ -41,6 +41,11 @@ body {
 
 .landing-call h1 {
     font-family: 'Playfair Display SC', serif;
+    font-size: 50pt;
+}
+
+.landing-call p{
+  font-size: 18pt;
 }
 
 .portfolio {
@@ -172,7 +177,7 @@ hr {
     left: 50%;
     transform: translateX(-50%);
     bottom: 34px;
-    background-color: white;
+    background-color: #f7f9ff;
     padding: 0 5px;
 }
 
@@ -180,7 +185,7 @@ li{
   list-style: none;
 }
 .bottom{
-      bottom: 440px !important;
+  margin-top: 0%;
 }
 
 .s-g{
@@ -201,4 +206,87 @@ margin-top: 5%;
     font-size: 14pt;
     font-weight: 300;
     color: #6d6d6d;
+}
+
+.c{
+  font-size: 18pt;
+}
+
+#name {
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+#subName{
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+
+}
+
+
+.portfolio .slide-one > .fp-tableCell h3,
+.portfolio .slide-one > .fp-tableCell img,
+.portfolio .slide-one > .fp-tableCell p {
+	transform: translateY(1000px);
+	opacity: 0;
+	transition: transform .66s cubic-bezier(0.16, 0.68, 0.43, 0.99),
+				opacity .66s ease-in-out;
+}
+
+.portfolio.active .slide-one.active > .fp-tableCell h3,
+.portfolio .slide-one > .fp-tableCell img,
+.portfolio.active .slide-one.active > .fp-tableCell p {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.portfolio.active .slide-one.active > .fp-tableCell p {
+	transition-delay: .22s;
+}
+
+.portfolio.active .slide-one.active > .fp-tableCell p + p {
+	transition-delay: .44s;
+}
+
+.about > .fp-tableCell h3,
+.about > .fp-tableCell p {
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+
+.about.active > .fp-tableCell h3,
+.about.active > .fp-tableCell p {
+	opacity: 1;
+}
+
+.about.active > .fp-tableCell p {
+	transition-delay: .33s;
+}
+
+.about.active > .fp-tableCell p + p {
+	transition-delay: .66s;
+}
+
+
+.contact > .fp-tableCell h1,
+.contact > .fp-tableCell li {
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+
+.contact.active > .fp-tableCell h1,
+.contact.active > .fp-tableCell li {
+	opacity: 1;
+}
+
+.contact.active > .fp-tableCell li,
+.contact > .fp-tableCell i {
+	transition-delay: .33s;
+}
+
+.contact.active > .fp-tableCell li + li,
+.contact > .fp-tableCell i + i{
+	transition-delay: .66s;
 }
