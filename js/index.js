@@ -20,6 +20,10 @@ $(document).ready(function() {
             $('.animation').removeClass('animated zoomInRight');
             $('.animation').removeClass('animated zoomInRight');
             $('#quote').removeClass('animated pulse');
+            $('#1').removeClass('animated bounce');
+            $('#2').removeClass('animated shake');
+            $('#3').removeClass('animated shake');
+            $('#4').removeClass('animated shake');
         },
         afterLoad:function(anchorLink, index){
 		var loadedSection = $(this);
@@ -30,11 +34,23 @@ $(document).ready(function() {
     			$('.entrance').addClass('animated fadeIn');
                 $('#quote').addClass('animated pulse');
     		}
+        if(anchorLink == 'skills'){
+      $('#1').addClass('animated bounce');
+      $('#2').addClass('animated shake');
+      $('#3').addClass('animated shake');
+      $('#4').addClass('animated shake');
+
+    }
+
         },
         afterRender: function(){
             $('.animation').addClass('animated zoomInRight');
             $('.animation').addClass('animated zoomInRight');
             $('#quote').addClass('animated pulse');
+            $('#1').addClass('animated bounce');
+            $('#2').addClass('animated shake');
+            $('#3').addClass('animated shake');
+            $('#4').addClass('animated shake');
         }
     });
 

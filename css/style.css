@@ -518,3 +518,25 @@ left: 570px;
 position: absolute;
 
 }
+
+.thisonefirst{
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+.numbertwo{
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+}
+.numberthree{
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+  animation-iteration-count: 1;
+}
+.numberfour{
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+}
