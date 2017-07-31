@@ -347,3 +347,174 @@ animation-iteration-count: 1;
 .bold{
   font-weight: bold;
 }
+
+.pyramid-container {
+  width: 100%;
+  font-family: "Francois One", sans-serif;
+  font-size: 16.5px;
+  line-height: 18px;
+  margin-top: 100px;
+}
+
+.pyramid {
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pyramid-row {
+  display: block;
+}
+
+.level {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 1px auto;
+  color: white;
+  height: 70px;
+  position: relative;
+  transition: .2s all;
+  cursor: pointer;
+}
+
+.level:hover {
+  border-bottom-color: grey;
+}
+
+.level span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  white-space: nowrap;
+}
+
+.one {
+  width: 0;
+  height: 0;
+	border-left: 50px solid #f9f9f7;
+	border-right: 50px solid #f9f9f7;
+	border-bottom: 90px solid #222222;
+}
+
+.two {
+	border-bottom: 80px solid #222222;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 200px;
+}
+
+.three {
+	border-bottom: 80px solid #222222;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 300px;
+}
+
+.four {
+	border-bottom: 80px solid #222222;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 400px;
+}
+
+.five {
+  border-bottom: 80px solid #222222;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 500px;
+}
+
+.six {
+  border-bottom: 80px solid #222222;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 600px;
+}
+
+.seven {
+  border-bottom: 80px solid #222222;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 700px;
+}
+
+.eight {
+  border-bottom: 80px solid #222222;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+  margin-left:-50px;
+	height: 0;
+	width: 800px;
+}
+
+.one span {
+  margin-left: -11px;
+  top: 43px;
+}
+
+.two span {
+  margin-left: -38px;
+  top: 30px;
+}
+
+.three span {
+  margin-left: -40px;
+  top: 30px;
+}
+
+.four span {
+  margin-left: -80px;
+  top: 33px;
+}
+
+.five span {
+  margin-left: -60px;
+  top: 33px;
+}
+
+.six span {
+  margin-left: -55px;
+  top: 33px;
+}
+
+.seven span {
+  margin-left: -80px;
+  top: 33px;
+}
+
+.eight span {
+  margin-left: -60px;
+  top: 33px;
+}
+
+#atomtext{
+    top: 100px;
+    left: 200px;
+    position: absolute;
+
+}
+
+#sublimetext{
+  width: 100px !important;
+  height: 100px;
+  top: 100px;
+  left: 440px;
+  position: absolute;
+
+}
+
+#github{
+  width: 200px !important;
+height: 100px;
+top: 90px;
+left: 570px;
+position: absolute;
+
+}

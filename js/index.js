@@ -63,3 +63,18 @@ function type(){
 
   }
 }
+
+
+$('#1').hover(
+  function(){
+     $('#atomtext').removeClass('hidden');
+     $('#sublimetext').removeClass('hidden');
+     $('#github').removeClass('hidden');
+},
+function(){
+  $('#atomtext').addClass('hidden');
+  $('#sublimetext').addClass('hidden');
+  $('#github').addClass('hidden');
+
+}
+);
