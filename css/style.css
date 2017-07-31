@@ -43,6 +43,10 @@ body {
     font-family: 'Playfair Display SC', serif;
     font-size: 50pt;
     position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+    left: 20%;
 }
 
 .landing-call p{
@@ -223,12 +227,14 @@ margin-top: 5%;
 
 
 #brain{
-      height: 1000px;
+      height: 850px;
+      margin-top: 15%;
+          margin-right: 7%;
 }
 
 #scientist{
 float: left;
-margin-top: 20%;
+margin-top: 33%;
 opacity: 1;
 position: absolute;
 width: 250px;
@@ -238,14 +244,24 @@ animation-delay: 0s;
 animation-iteration-count: 1;
 }
 
-#scientist:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+#sci:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
+#sci:hover + #show1 {
+  display: block;
+}
+
+/*
+#show1,#show2{
+  display: none;
+}
+*/
+
 #coder-desc{
-margin-left: 80%;
-margin-top: 20%;
+margin-left: 72%;
+margin-top: 33%;
 opacity: 1;
 position: absolute;
 width: 300px;
@@ -256,16 +272,36 @@ animation-iteration-count: 1;
 
 }
 
-#coder-desc:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+#code:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
+/*
+#code:hover + #show2 {
+  display: block;
+}
+*/
+
+
+.hidden{
+  display: none;
+}
 
 .entrance{
+  color: black;
   animation-duration: 3s;
   animation-delay: 0s;
   animation-iteration-count: 1;
+
+}
+
+#cells {
+  width: 300px;
+  height: 300px;
+  display: block;
+  position: relative;
+  bottom: 560px;
 
 }
 
@@ -294,46 +330,19 @@ animation-iteration-count: 1;
 	transition-delay: .44s;
 }
 
-/*
-
-.about > .fp-tableCell h3,
-.about > .fp-tableCell p {
-	opacity: 0;
-	transition: opacity 1s ease-in-out;
+@keyframes blink{
+  0%{
+    opacity: 1
+  }
+  100%{
+    opacity: 0
+  }
 }
 
-.about.active > .fp-tableCell h3,
-.about.active > .fp-tableCell p {
-	opacity: 1;
+.blinking{
+  animation: blink 0.8s infinite alternate !important;
 }
 
-.about.active > .fp-tableCell p {
-	transition-delay: .33s;
+.bold{
+  font-weight: bold;
 }
-
-.about.active > .fp-tableCell p + p {
-	transition-delay: .66s;
-}
-
-
-.contact > .fp-tableCell h1,
-.contact > .fp-tableCell li {
-	opacity: 0;
-	transition: opacity 1s ease-in-out;
-}
-
-.contact.active > .fp-tableCell h1,
-.contact.active > .fp-tableCell li {
-	opacity: 1;
-}
-
-.contact.active > .fp-tableCell li,
-.contact > .fp-tableCell i {
-	transition-delay: .33s;
-}
-
-.contact.active > .fp-tableCell li + li,
-.contact > .fp-tableCell i + i{
-	transition-delay: .66s;
-}
-*/

@@ -1,6 +1,12 @@
 
 'use strict';
 
+var str = "Charlotte Frates"
+var splitstr = str.split('');
+var timeInterval = 150;
+var i = 0;
+
+
 $(document).ready(function() {
 
     $('#fullpage').fullpage({
@@ -28,6 +34,7 @@ $(document).ready(function() {
             $('#quote').addClass('animated pulse');
         }
     });
+
     /*============================================
     Skills
     ==============================================*/
@@ -37,4 +44,19 @@ $(document).ready(function() {
      },2000);
     });
 
+
+    type();
+
 });
+
+function type(){
+  if(i<splitstr.length){
+    $('.text').append(splitstr[i]);
+    i++;
+    setTimeout(function () {
+      type();
+    }, timeInterval);
+  }else{
+
+  }
+}
