@@ -13,6 +13,9 @@ $(document).ready(function() {
         sectionsColor:['#f9f9f7','#f7f9ff','#e3ecf5','#f9f9f7','#e3ecf5'],
         anchors: ['home', 'portfolio', 'about','skills', 'contact'],
         menu: '#navigation',
+        easing: 'easeInCirc',
+        resize: false,
+        scrollingSpeed: 900,
         onLeave: function(index, nextIndex, direction){
             $('.animation').removeClass('animated zoomInRight');
             $('.animation').removeClass('animated zoomInRight');
