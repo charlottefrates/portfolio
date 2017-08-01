@@ -16,8 +16,8 @@ $(document).ready(function() {
           resize: false,
           scrollingSpeed: 900,
           onLeave: function(index, nextIndex, direction) {
-               $('.animation').removeClass('animated zoomInRight');
-               $('.animation').removeClass('animated zoomInRight');
+               //$('.animation').removeClass('animated zoomInRight');
+               //$('.animation').removeClass('animated zoomInRight');
                $('#quote').removeClass('animated pulse');
                $('#1').removeClass('animated bounce');
                $('#2').removeClass('animated shake');
@@ -30,9 +30,9 @@ $(document).ready(function() {
           },
           afterLoad: function(anchorLink, index) {
                var loadedSection = $(this);
-               if (anchorLink == 'contact') {
-                    $('.animation').addClass('animated zoomInRight');
-               }
+               //if (anchorLink == 'contact') {
+               //     $('.animation').addClass('animated zoomInRight');
+               //}
                if (anchorLink == 'about') {
                     $('.entrance').addClass('animated fadeIn');
                     $('#quote').addClass('animated pulse');
@@ -51,8 +51,8 @@ $(document).ready(function() {
 
           },
           afterRender: function() {
-               $('.animation').addClass('animated zoomInRight');
-               $('.animation').addClass('animated zoomInRight');
+               //$('.animation').addClass('animated zoomInRight');
+               //$('.animation').addClass('animated zoomInRight');
                $('#quote').addClass('animated pulse');
                $('#1').addClass('animated bounce');
                $('#2').addClass('animated shake');
