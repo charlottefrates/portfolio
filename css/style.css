@@ -495,16 +495,16 @@ animation-iteration-count: 1;
 }
 
 #atomtext{
-    top: 100px;
+    top: 115px;
     left: 200px;
     position: absolute;
 
 }
 
 #sublimetext{
-  width: 100px !important;
-  height: 100px;
-  top: 100px;
+  width: 80px !important;
+  height: 70px;
+  top: 118px;
   left: 440px;
   position: absolute;
 
@@ -512,10 +512,150 @@ animation-iteration-count: 1;
 
 #github{
   width: 200px !important;
-height: 100px;
-top: 90px;
-left: 570px;
+  height: 100px;
+  top: 100px;
+  left: 525px;
+  position: absolute;
+}
+
+#javascript{
+  width: 100px !important;
+  height: 90px;
+  top: 150px;
+  left: 1000px;
+  position: absolute;
+
+}
+
+#javascript2{
+  width: 100px !important;
+  height: 90px;
+  top: 328px;
+  left: 1082px;
+  position: absolute;
+
+}
+
+#html{
+  width: 100px !important;
+  height: 90px;
+  top: 150px;
+  left: 1100px;
+  position: absolute;
+
+}
+
+#css{
+      width: 100px !important;
+      height: 90px;
+      top: 150px;
+      left: 1200px;
+      position: absolute;
+}
+
+#bootstrap{
+  width: 196px !important;
+  height: 86px;
+  top: 305px;
+  left: 456px;
+  position: absolute;
+
+}
+
+#jquery{
+  width: 100px !important;
+height: 90px;
+top: 308px;
+left: 343px;
 position: absolute;
+
+}
+
+#node{
+  width: 138px !important;
+  height: 61px;
+  top: 417px;
+  left: 113px;
+  position: absolute;
+
+}
+
+#react{
+  width: 105px !important;
+    height: 59px;
+    top: 426px;
+    left: 270px;
+    position: absolute;
+}
+
+#redux{
+  width: 143px !important;
+height: 57px;
+top: 424px;
+left: 404px;
+position: absolute;
+
+}
+
+#mongo{
+  width: 81px !important;
+height: 83px;
+top: 570px;
+left: 1128px;
+position: absolute;
+}
+
+#mongoose{
+  width: 93px !important;
+  height: 75px;
+  top: 578px;
+  left: 1243px;
+  position: absolute;
+
+}
+
+#npm{
+  width: 89px !important;
+    height: 55px;
+    top: 655px;
+    left: 341px;
+    position: absolute;
+
+}
+
+#mocha{
+  width: 186px !important;
+height: 85px;
+top: 494px;
+left: 130px;
+position: absolute;
+
+}
+
+#travis{
+  width: 120px !important;
+      height: 59px;
+      top: 508px;
+      left: 317px;
+      position: absolute;
+
+}
+
+#heroku{
+  width: 103px !important;
+  height: 39px;
+  top: 749px;
+  left: 1236px;
+  position: absolute;
+
+}
+
+#netlify{
+  width: 85px !important;
+  height: 53px;
+  top: 745px;
+  left: 1364px;
+  position: absolute;
 
 }
 
@@ -539,4 +679,24 @@ position: absolute;
   animation-duration: 2s;
   animation-delay: 2s;
   animation-iteration-count: 1;
+}
+.numberfive{
+  animation-duration: 2s;
+  animation-delay: 2.5s;
+  animation-iteration-count: 1;
+}
+.numbersix{
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+}
+.numberseven{
+  animation-duration: 3s;
+  animation-delay: 3.5s;
+  animation-iteration-count: 1;
+}
+.numbereight{
+  animation-duration: 1s;
+  animation-delay: 4s;
+  animation-iteration-count: 4;
 }
