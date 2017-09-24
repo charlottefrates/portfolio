@@ -45,7 +45,7 @@ body {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 8%;
+    margin-top: 12%;
     left: 20%;
 }
 
@@ -210,7 +210,7 @@ margin-top: 5%;
 
 .change{
      font-family: Oswald, Arial, sans-serif;
-    font-size: 14pt;
+    font-size: 12pt;
     font-weight: 300;
     color: #6d6d6d;
 }
@@ -220,7 +220,7 @@ margin-top: 5%;
 }
 
 #name {
-     margin-top: 2%;
+    margin-top: 2%;
     animation-duration: 1s;
     animation-delay: 0s;
     animation-iteration-count: 1;
@@ -229,7 +229,7 @@ margin-top: 5%;
 
 #brain{
       height: 850px;
-      margin-top: 15%;
+      margin-top: 18%;
           margin-right: 7%;
 }
 
@@ -294,7 +294,10 @@ animation-iteration-count: 1;
   animation-duration: 3s;
   animation-delay: 0s;
   animation-iteration-count: 1;
+}
 
+#quote{
+  margin-top: 10%;
 }
 
 #cells {
@@ -346,6 +349,10 @@ animation-iteration-count: 1;
 
 .bold{
   font-weight: bold;
+}
+
+.mobile_skills{
+  display: none;
 }
 
 .pyramid-container {
@@ -402,7 +409,7 @@ animation-iteration-count: 1;
 	border-left: 50px solid transparent;
 	border-right: 50px solid transparent;
 	height: 0;
-	width: 200px;
+	width: 28%;
 }
 
 .three {
@@ -410,7 +417,7 @@ animation-iteration-count: 1;
 	border-left: 50px solid transparent;
 	border-right: 50px solid transparent;
 	height: 0;
-	width: 300px;
+	width: 42.5%;
 }
 
 .four {
@@ -418,7 +425,7 @@ animation-iteration-count: 1;
 	border-left: 50px solid transparent;
 	border-right: 50px solid transparent;
 	height: 0;
-	width: 400px;
+	width: 57%;
 }
 
 .five {
@@ -426,7 +433,7 @@ animation-iteration-count: 1;
 	border-left: 50px solid transparent;
 	border-right: 50px solid transparent;
 	height: 0;
-	width: 500px;
+	width: 72%;
 }
 
 .six {
@@ -434,7 +441,7 @@ animation-iteration-count: 1;
 	border-left: 50px solid transparent;
 	border-right: 50px solid transparent;
 	height: 0;
-	width: 600px;
+	width: 86%;
 }
 
 .seven {
@@ -442,7 +449,7 @@ animation-iteration-count: 1;
 	border-left: 50px solid transparent;
 	border-right: 50px solid transparent;
 	height: 0;
-	width: 700px;
+	width: 100.5%;
 }
 
 .eight {
@@ -451,7 +458,7 @@ animation-iteration-count: 1;
 	border-right: 50px solid transparent;
   margin-left:-50px;
 	height: 0;
-	width: 800px;
+	width: 114.5%;
 }
 
 .one span {
@@ -597,21 +604,20 @@ position: absolute;
 
 }
 
-#mongo{
-  width: 81px !important;
-height: 83px;
-top: 570px;
-left: 1128px;
-position: absolute;
+#mongo {
+    width: 81px !important;
+    height: 83px;
+    top: 570px;
+    left: 1186px;
+    position: absolute;
 }
 
-#mongoose{
-  width: 93px !important;
-  height: 75px;
-  top: 578px;
-  left: 1243px;
-  position: absolute;
-
+#mongoose {
+    width: 93px !important;
+    height: 75px;
+    top: 578px;
+    left: 1283px;
+    position: absolute;
 }
 
 #npm{
@@ -641,22 +647,20 @@ position: absolute;
 
 }
 
-#heroku{
-  width: 103px !important;
-  height: 39px;
-  top: 749px;
-  left: 1236px;
-  position: absolute;
-
+#heroku {
+    width: 103px !important;
+    height: 39px;
+    top: 684px;
+    left: 1236px;
+    position: absolute;
 }
 
-#netlify{
-  width: 85px !important;
-  height: 53px;
-  top: 745px;
-  left: 1364px;
-  position: absolute;
-
+#netlify {
+    width: 85px !important;
+    height: 53px;
+    top: 676px;
+    left: 1364px;
+    position: absolute;
 }
 
 .thisonefirst{
@@ -699,4 +703,211 @@ position: absolute;
   animation-duration: 1s;
   animation-delay: 4s;
   animation-iteration-count: 4;
+}
+
+/* ================================= NAVIGATION =================================*/
+
+nav {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     text-align: center;
+     z-index: 5;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 25px 0 rgba(0, 0, 0, 0.19);
+}
+
+a {
+     text-decoration: none;
+     color: inherit;
+}
+
+nav ul {
+     background-color: white;
+     overflow: hidden;
+     color: white;
+     padding: 0;
+     text-align: center;
+     margin: 0;
+     height: 50px;
+     -webkit-transition: max-height 1s ease;
+     -ms-transition: max-height 1s ease;
+     -moz-transition: max-height 1s ease;
+     -o-transition: max-height 1s ease;
+     transition: max-height 1s ease;
+}
+
+nav ul li {
+     display: inline-block;
+     padding-left: 20px;
+     transition: background-color .5s ease;
+     font-size: 18px;
+}
+
+
+.handle {
+     width: 100%;
+     background: grey;
+     text-align: left;
+     padding: 32px 12px;
+     cursor: pointer;
+     display: none;
+     color: white;
+}
+
+.handle-menu {
+     font-size: 20px;
+     font-weight: bold;
+     background: white;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+.fa-bars {
+     position: relative;
+     bottom: 15px;
+     float: right;
+     color: white;
+}
+
+.activity-summary-heading {
+     margin-top: 90px;
+     margin-bottom: 0;
+     letter-spacing: 1px;
+}
+
+/* ================================= MEDIA QUERY: NAVIGATION =================================*/
+
+@media only screen and (max-width: 660px) {
+     nav ul {
+          max-height: 0;
+     }
+     .showing {
+          height: 500px;
+          max-height: 23em;
+     }
+     nav ul li {
+          width: 100%;
+          padding: 15px;
+     }
+     .handle {
+          display: block;
+     }
+}
+
+
+
+@media (max-width: 450px){
+  .landing-call h1 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 18pt;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30%;
+    left: 16%;
+}
+
+  #brain {
+      height: 450px;
+      margin-top: 38%;
+      margin-left: -13%;
+      margin-right: auto;
+  }
+
+  #scientist-desc{
+    display: none;
+  }
+
+  #coder-desc{
+    display: none;
+  }
+
+  .websites {
+      width: 60%;
+      height: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15%;
+  }
+
+.bloom{
+  margin-top: 20%;
+}
+.web_title{
+  font-weight: bold;
+color: black;
+padding-top: 10px;
+margin-left: 33%;
+margin-right: 40%;
+text-align: center;
+}
+
+.web_desc{
+  text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.web_desc_2{
+  text-align: center;
+
+}
+
+#quote {
+    margin-top: 10%;
+    font-size: 16pt;
+    margin-top: 25%;
+}
+
+.prof-shot{
+  display: none;
+}
+
+.entrance {
+    color: black;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    font-size: 12pt;
+    margin-top: -9%;
+    text-align: justify;
+}
+
+.notmobile{
+  display: none;
+}
+
+.change {
+    font-family: Oswald, Arial, sans-serif;
+    font-size: 8pt;
+    font-weight: 300;
+    color: #6d6d6d;
+}
+
+.mobile_skills{
+  margin-top: 30% !important;
+  display: block;
+  text-align: center;
+  margin-left: -14%;
+  margin-right: auto;
+}
+
+.mobile_skills li{
+  padding: 10px;
+}
+
+.contact-list{
+  margin-left: -13%;
+
+}
+
+.pyramid{
+  display: none;
+}
+
+
+
 }

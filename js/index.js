@@ -4,12 +4,33 @@ var str = "Charlotte Frates"
 var splitstr = str.split('');
 var timeInterval = 150;
 var i = 0;
+/* ================================= RESPONSIVE NAVIGATION =================================*/
+
+$('.handle').on('click', function(event) {
+     $('nav ul').toggleClass('showing');
+});
+
+$('.show-list').click(function() {
+     $('.wrapper').addClass('list-mode');
+});
+
+$('.hide-list').click(function() {
+     $('.wrapper').removeClass('list-mode');
+});
+
+
+/* ================================= RESPONSIVE NAVIGATION =================================*/
+
+$('.handle').on('click', function(event) {
+     $('.navigator').toggleClass('showing');
+});
 
 
 $(document).ready(function() {
 
+
      $('#fullpage').fullpage({
-          sectionsColor: ['#f9f9f7', '#f7f9ff', '#e3ecf5', '#f9f9f7', '#e3ecf5'],
+          sectionsColor: ['#f9f9f7', '#f9f9f7', '#e3ecf5', '#f9f9f7', '#e3ecf5'],
           anchors: ['home', 'portfolio', 'about', 'skills', 'contact'],
           menu: '#navigation',
           easing: 'easeInCirc',
@@ -66,6 +87,7 @@ $(document).ready(function() {
      });
 
      type();
+
 
 });
 

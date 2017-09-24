@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html >
 
 <head>
      <meta charset="UTF-8">
@@ -42,37 +42,29 @@
 
 </head>
 
-<body>
-     <nav class="navbar navbar-inverse navbar-fixed-top" id="navigation">
-          <div class="container">
-               <!-- Brand and toggle get grouped for better mobile display -->
-               <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                      </button>
-                    <a class="navbar-brand playfair-sc" href="#home">CFrates</a>
-               </div>
+<body class="fp-responsive">
+     <section id="navbar">
+          <nav class="navigator">
+               <ul>
+                    <div class="container">
 
-               <!-- Collect the nav links, forms, and other content for toggling -->
-               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                         <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
-                         <li data-menuanchor="portfolio"><a href="#portfolio">Portfolio</a></li>
-                         <li data-menuanchor="about"><a href="#about">About</a></li>
-                         <li data-menuanchor="skills"><a href="#skills">Skills</a></li>
-                         <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
-                    </ul>
-               </div>
-               <!-- /.navbar-collapse -->
-          </div>
-          <!-- /.container-fluid -->
-     </nav>
+                              <ul class="nav navbar-nav navbar-right">
+                                   <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
+                                   <li data-menuanchor="portfolio"><a href="#portfolio">Portfolio</a></li>
+                                   <li data-menuanchor="about"><a href="#about">About</a></li>
+                                   <li class="skillnav" data-menuanchor="skills"><a href="#skills">Skills</a></li>
+                                   <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+                              </ul>
 
-     <div id="fullpage">
-          <div id="name" class=" section landing" data-anchor="home">
+
+                    </div>
+               </ul>
+               <div class="handle"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
+          </nav>
+     </section>
+
+     <div id="fullpage" class="fullpage-wrapper">
+          <div id="name" class=" section fp-table  landing" data-anchor="home">
                <div class="container">
                     <div class="row">
                          <div class="col-xs-12 bottom">
@@ -114,126 +106,65 @@
                     </div>
                </div>
           </div>
-          <div class="section portfolio" data-anchor="portfolio">
+          <div class="section portfolio fp-section fp-tableCell" data-anchor="portfolio">
+               <div class="slide slide-one">
+                    <div class="container">
+                         <div class="row">
+                              <div class="col-md-6">
+                                   <a href="https://alpha-note.herokuapp.com/" target="_blank"><img class="img-responsive boxshadow websites" src="images/AlphaNote.jpg" ></a>
+                              </div>
+                              <div class="col-md-6 text-left">
+                                   <h3 class="web_title">AlphaNote</h3>
+                                   <br>
+                                   <p class="web_desc">A simple cloud based ELN (electronic laboratory notebook) for research and academic use.</p>
+                                   <br>
+                                   <hr>
+                                   <i class="fa fa-code fa-lg" aria-hidden="true"></i>
+                                   <p class="web_desc_2">Front End: HTML5 + CSS3 + JavaScript + jQuery + Bootstrap</p>
+                                   <p class="web_desc_2">Back End: Node + Express + MongoDB + Passport</p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="slide slide-one">
+                    <div class="container">
+                         <div class="row">
+                              <div class="col-md-6">
+                                   <a href="https://bloom-water-tracker.herokuapp.com/" target="_blank"><img class="img-responsive boxshadow websites bloom" src="images/Bloom.png" ></a>
+                              </div>
+                              <div class="col-md-6 text-left">
+                                   <h3 class="web_title">Bloom</h3>
+                                   <br>
+                                   <p class="web_desc">A smart water tracking application that includes a projection of watering usage based on current weather information and user based settings.</p>
+                                   <br>
+                                   <hr>
+                                   <i class="fa fa-code fa-lg" aria-hidden="true"></i>
+                                   <p class="web_desc_2">Front End: React + Redux + CSS3 + jQuery + Bootstrap</p>
+                                   <p class="web_desc_2">Back End: Node + Express + MongoDB + Passport</p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
                <div class="slide slide-one">
                     <div class="container">
                          <div class="row">
                               <div class="col-md-6" id="symptom">
-                                   <a href="https://charlottefrates.github.io/symptom_checker/" target="_blank"> <img class="img-responsive boxshadow" src="images/SymptomChecker.jpg"> </a>
+                                   <a href="https://charlottefrates.github.io/symptom_checker/" target="_blank"> <img class="img-responsive boxshadow websites" src="images/SymptomChecker.jpg"> </a>
                               </div>
                               <div class="col-md-6 text-left">
-                                   <h3>Symptom Checker</h3>
+                                   <h3 class="web_title">Symptom Checker</h3>
                                    <br>
-                                   <p>An application designed to help you understand what your medical symptoms could mean and what condition you might have.</p>
+                                   <p class="web_desc">An application designed to help you understand what your medical symptoms could mean and what condition you might have.</p>
                                    <br>
                                    <hr>
                                    <i class="fa fa-code fa-lg" aria-hidden="true"></i>
-                                   <p>Front End:HTML5 + CSS3 + JavaScript + jQuery + AJAX</p>
+                                   <p class="web_desc_2">Front End:HTML5 + CSS3 + JavaScript + jQuery + AJAX</p>
                               </div>
                          </div>
                     </div>
                </div>
-               <div class="slide slide-one">
-                    <div class="container">
-                         <div class="row">
-                              <div class="col-md-6">
-                                   <a href="https://alpha-note.herokuapp.com/" target="_blank"><img class="img-responsive boxshadow" src="images/AlphaNote.jpg" ></a>
-                              </div>
-                              <div class="col-md-6 text-left">
-                                   <h3>AlphaNote</h3>
-                                   <br>
-                                   <p>A simple cloud based ELN (electronic laboratory notebook) for research and academic use.</p>
-                                   <br>
-                                   <hr>
-                                   <i class="fa fa-code fa-lg" aria-hidden="true"></i>
-                                   <p>Front End: HTML5 + CSS3 + JavaScript + jQuery + Bootstrap</p>
-                                   <p>Back End: Node + Express + MongoDB + Passport</p>
-                              </div>
-                         </div>
-                    </div>
-               </div>
-               <div class="slide slide-one">
-                    <div class="container">
-                         <div class="row">
-                              <div class="col-md-6">
-                                   <a href="" target="_blank"><img class="img-responsive boxshadow" src="images/Bloom.jpg" ></a>
-                              </div>
-                              <div class="col-md-6 text-left">
-                                   <h3>Bloom (Still in Production)</h3>
-                                   <br>
-                                   <p>A smart watering application that includes a projection of watering usage based on current weather information and user based settings.</p>
-                                   <br>
-                                   <hr>
-                                   <i class="fa fa-code fa-lg" aria-hidden="true"></i>
-                                   <p>Front End: React + Redux + CSS3 + jQuery + Bootstrap</p>
-                                   <p>Back End: Node + Express + MongoDB + Passport</p>
-                              </div>
-                         </div>
-                    </div>
-               </div>
-
-               <div class="slide slide-one">
-                    <div class="container">
-                         <div class="row">
-                              <div class="col-md-6">
-                                   <a href="https://charlottefrates.github.io/Quiz/" target="_blank"><img class="img-responsive boxshadow" src="images/ghibli.jpg" ></a>
-                              </div>
-                              <div class="col-md-6 text-left">
-                                   <h3>Studio Ghibli Quiz</h3>
-                                   <br>
-                                   <p>A fun and interactive quiz displaying my first adventures with Javascript.</p>
-                                   <br>
-                                   <hr>
-                                   <i class="fa fa-code fa-lg" aria-hidden="true"></i>
-                                   <p>Front End:HTML5 + CSS3 + JavaScript + jQuery</p>
-                              </div>
-                         </div>
-                    </div>
-               </div>
-
-               <div class="slide slide-one">
-                    <div class="container">
-                         <div class="row">
-                              <div class="col-md-6">
-                                   <a href="https://charlottefrates.github.io/youTubeAPI/" target="_blank"><img class="img-responsive boxshadow" src="images/tube.jpg" ></a>
-                              </div>
-                              <div class="col-md-6 text-left">
-                                   <h3>Tube Search</h3>
-                                   <br>
-                                   <p>A simple rendition of the traditional YouTube search engine displaying my first experiances with APIs and AJAX.</p>
-                                   <br>
-                                   <hr>
-                                   <i class="fa fa-code fa-lg" aria-hidden="true"></i>
-                                   <p>Front End:HTML5 + CSS3 + JavaScript + jQuery + AJAX</p>
-                              </div>
-                         </div>
-                    </div>
-               </div>
-
-
-               <div class="slide slide-one">
-                    <div class="container">
-                         <div class="row">
-                              <div class="col-md-6">
-                                   <a href="https://charlottefrates.github.io/tic_tac_toe/" target="_blank"><img class="img-responsive boxshadow" src="images/tictactoe.jpg" ></a>
-                              </div>
-                              <div class="col-md-6 text-left">
-                                   <h3>Tic Tac Toe</h3>
-                                   <br>
-                                   <p>A fun learning exercise on the traditional tic tac toe game using Javascript.</p>
-                                   <br>
-                                   <hr>
-                                   <i class="fa fa-code fa-lg" aria-hidden="true"></i>
-                                   <p>Front End:HTML5 + CSS3 + JavaScript + jQuery</p>
-                              </div>
-                         </div>
-                    </div>
-               </div>
-          
-
-
           </div>
-          <div class="section about" data-anchor="about">
+          <div class="section about fp-section fp-table" data-anchor="about">
                <div class="container">
                     <h1 id="quote"> "Study the science of art. Study the art of science. Develope your senses - especially learn how to see." - Lenoardo da Vinci </h1>
                     <br>
@@ -243,20 +174,20 @@
                               <img class="img-responsive prof-shot" src="images/about.jpg">
                          </div>
                          <div class="col-md-8 text-left entrance">
-                              <h3>About Me</h3>
-                              <p>Hi,I'm Charlotte. A cross-functional professional with a constructive attitude and a penchant for always learning something new.</p>
-                              <p>I enjoy turning complex problems into simple, beautiful and intuitive applications.</p>
-                              <p>I geek out on higher order functions, finding and learning awesome libraries or frameworks, and getting front and back ends to play nicely.</p>
-                              <p>After 10 years as a scientist, I found my LOVE for coding after spending countless nights of data-handling and working with our department's horribly designed and "clunky" database tools. I wrote my own scripts using VBA
-                                   to ease my frustrations as well as created my own custom run-time protocols for liquid handling robotic systems.</p>
-                              <p>My early coding adventures, lead to an increase in productivity and was eventually used by my whole department for high-thoroughput screening projects. *pats own back*</p>
-                              <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Charlotte+Virtucio" target="_blank" class="change">
-                                   <p>
-                                   </p>(Click here to check out my publications if you don't believe me.)</p>
-                              </a>
-                              <p>I decided to follow my instincs and joined a 6-month fullstack development bootcamp where I have indulged in my new found love and learned HTML,CSS, and javascript (which I've termed the "gate-way drug" for coding languages).
-                              </p>
-                              <p>My main goal is to LEARN MORE languages, gain new skills in this new (for me) industry, and create applications that can assist people in all walks of life.
+
+                              <p>Hi,I'm Charlotte. A cross-functional professional with a constructive attitude and a penchant for always learning something new.
+                              I enjoy turning complex problems into simple, beautiful and intuitive applications. I enjoy exploring new libraries,frameworks, and getting front and back ends to play nicely.</p>
+                              <div class="notmobile">
+                                   <p>After 10 years as a scientist, I found my LOVE for coding after spending countless nights of data-handling and working with our department's horribly designed and "clunky" database tools. I wrote my own scripts using VBA
+                                   to ease my frustrations as well as created my own custom run-time protocols for liquid handling robotic systems.
+                                   My early coding adventures, lead to an increase in productivity and was eventually used by my whole department for high-thoroughput screening projects. *pats own back*</p>
+                                   <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Charlotte+Virtucio" target="_blank" class="change">
+                                   <p>(Click here to check out my publications if you don't believe me.)</p>
+                                   </a>
+                                   <p>I decided to follow my instincs and joined a fullstack development bootcamp where I have indulged in my new found love and learned HTML,CSS, and javascript (which I've termed the "gate-way drug" for coding languages).
+                                   </p>
+                              </div>
+                              <p>My main goal is to LEARN MORE languages, gain new skills, and create applications that can assist people in all walks of life.
                               </p>
                               <p>It's my new calling...</p>
                          </div>
@@ -265,10 +196,13 @@
 
           </div>
 
-          <div class="section skills" data-anchor="skills">
+          <div class="section skills fp-section fp-table skillset" data-anchor="skills">
                <div class="container">
                     <div class="pyramid-container">
+
                          <div class="pyramid">
+                              <p> Hover over the pyramid to learn more about my skills.</p>
+                              <br>
                               <div class="pyramid-row">
                                    <div id="1" class=" thisonefirst level one">
                                         <span>Set<br>Up</span>
@@ -309,7 +243,27 @@
                                         <span>Deployment</span>
                                    </div>
                               </div>
+
                          </div>
+                    </div>
+
+                    <div class="mobile_skills">
+                         <ul>
+                              <li> Javascript </li>
+                              <li> Jquery</li>
+                              <li> HTML </li>
+                              <li> CSS </li>
+                              <li> Node </li>
+                              <li> npm </li>
+                              <li> React</li>
+                              <li> Redux </li>
+                              <li> Mongo </li>
+                              <li> Mongoose </li>
+                              <li> Mocha </li>
+                              <li> Travis </li>
+                         </ul>
+
+
                     </div>
 
 
@@ -406,15 +360,7 @@
                                         <li>
                                              <a href="https://github.com/charlottefrates" target="_blank"><i class="fa fa-github fa-fw fa-3x"></i></a>
                                         </li>
-                                        <!--TODO: Update Resume -->
-                                        <li>
-                                             <a href="" download=""><i class="fa fa-file-text fa-fw fa-3x"></i></a>
-                                        </li>
                                    </section>
-
-
-
-
 
                               </ul>
                          </div>
@@ -426,10 +372,6 @@
 
           </div>
 
-
-          <div class="section foot">
-               <!--Footer Here-->
-          </div>
      </div>
 
      <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
