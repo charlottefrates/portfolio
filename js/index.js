@@ -28,7 +28,6 @@ $('.handle').on('click', function(event) {
 
 $(document).ready(function() {
 
-
      $('#fullpage').fullpage({
           sectionsColor: ['#f9f9f7', '#f9f9f7', '#e3ecf5', '#f9f9f7', '#e3ecf5'],
           anchors: ['home','portfolio', 'about', 'skills', 'contact'],
@@ -38,6 +37,7 @@ $(document).ready(function() {
           scrollingSpeed: 1000,
 
           onLeave: function(index, nextIndex, direction) {
+
                $('#quote').removeClass('animated pulse');
                $('#1').removeClass('animated bounce');
                $('#2').removeClass('animated shake');
@@ -49,7 +49,7 @@ $(document).ready(function() {
                $('#8').removeClass('animated pulse');
           },
           afterLoad: function(anchorLink, index) {
-               var loadedSection = $(this);
+
                if (anchorLink == 'about') {
                     $('.entrance').addClass('animated fadeIn');
                     $('#quote').addClass('animated pulse');

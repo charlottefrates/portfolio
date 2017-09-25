@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #ffffff;
+    background-color: #f9f9f7;
     color: #222222;
 }
 
@@ -44,6 +44,10 @@ body {
 
 .text{
   font-size: 100% !important;
+}
+
+#code{
+  font-size: 30px;
 }
 .landing-call h1 {
     font-family: 'Playfair Display SC', serif;
@@ -954,7 +958,15 @@ text-align: center;
   }
   .handle {
        display: block;
+       padding: 37px 12px;
   }
+
+  .fa-bars {
+    position: relative;
+    bottom: 22px;
+    float: right;
+    color: white;
+}
 
   .landing-call h1 {
     font-family: 'Playfair Display SC', serif;
