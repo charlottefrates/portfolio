@@ -34,6 +34,7 @@ $(document).ready(function() {
           anchors: ['home', 'portfolio', 'about', 'skills', 'contact'],
           menu: '#menu',
           easing: 'easeInCirc',
+          autoScrolling:false,
           resize: false,
           scrollingSpeed: 1000,
 
