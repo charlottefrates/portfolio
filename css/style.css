@@ -956,17 +956,20 @@ text-align: center;
        width: 100%;
        padding: 15px;
   }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 5;
+  }
+  
   .handle {
        display: block;
-       padding: 37px 12px;
   }
 
-  .fa-bars {
-    position: relative;
-    bottom: 22px;
-    float: right;
-    color: white;
-}
 
   .landing-call h1 {
     font-family: 'Playfair Display SC', serif;
