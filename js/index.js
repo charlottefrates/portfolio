@@ -31,10 +31,9 @@ $(document).ready(function() {
 
      $('#fullpage').fullpage({
           sectionsColor: ['#f9f9f7', '#f9f9f7', '#e3ecf5', '#f9f9f7', '#e3ecf5'],
-          anchors: ['home', 'portfolio', 'about', 'skills', 'contact'],
+          anchors: ['home','portfolio', 'about', 'skills', 'contact'],
           menu: '#menu',
           easing: 'easeInCirc',
-          autoScrolling:false,
           resize: false,
           scrollingSpeed: 1000,
 
