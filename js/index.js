@@ -32,13 +32,12 @@ $(document).ready(function() {
      $('#fullpage').fullpage({
           sectionsColor: ['#f9f9f7', '#f9f9f7', '#e3ecf5', '#f9f9f7', '#e3ecf5'],
           anchors: ['home', 'portfolio', 'about', 'skills', 'contact'],
-          menu: '#navigation',
+          menu: '#menu',
           easing: 'easeInCirc',
           resize: false,
-          scrollingSpeed: 900,
+          scrollingSpeed: 1000,
+
           onLeave: function(index, nextIndex, direction) {
-               //$('.animation').removeClass('animated zoomInRight');
-               //$('.animation').removeClass('animated zoomInRight');
                $('#quote').removeClass('animated pulse');
                $('#1').removeClass('animated bounce');
                $('#2').removeClass('animated shake');
@@ -51,9 +50,6 @@ $(document).ready(function() {
           },
           afterLoad: function(anchorLink, index) {
                var loadedSection = $(this);
-               //if (anchorLink == 'contact') {
-               //     $('.animation').addClass('animated zoomInRight');
-               //}
                if (anchorLink == 'about') {
                     $('.entrance').addClass('animated fadeIn');
                     $('#quote').addClass('animated pulse');
@@ -72,8 +68,6 @@ $(document).ready(function() {
 
           },
           afterRender: function() {
-               //$('.animation').addClass('animated zoomInRight');
-               //$('.animation').addClass('animated zoomInRight');
                $('#quote').addClass('animated pulse');
                $('#1').addClass('animated bounce');
                $('#2').addClass('animated shake');
@@ -84,6 +78,7 @@ $(document).ready(function() {
                $('#7').addClass('animated rubberBand');
                $('#8').addClass('animated pulse');
           }
+
      });
 
      type();

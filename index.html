@@ -48,11 +48,11 @@
                <ul>
                     <div class="container">
 
-                              <ul class="nav navbar-nav navbar-right">
+                              <ul id="menu"class="nav navbar-nav navbar-right">
                                    <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
                                    <li data-menuanchor="portfolio"><a href="#portfolio">Portfolio</a></li>
                                    <li data-menuanchor="about"><a href="#about">About</a></li>
-                                   <li class="skillnav" data-menuanchor="skills"><a href="#skills">Skills</a></li>
+                                   <li data-menuanchor="skills" class="skillnav"><a href="#skills">Skills</a></li>
                                    <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
                               </ul>
 
@@ -63,10 +63,13 @@
           </nav>
      </section>
 
-     <div id="fullpage" class="fullpage-wrapper">
-          <div id="name" class=" section fp-table  landing" data-anchor="home">
+     <div id="fullpage">
+
+          <!-- Section 1 -->
+          <div class="section fp-table landing" id="name" data-anchor="home" >
                <div class="container">
                     <div class="row">
+
                          <div class="col-xs-12 bottom">
                               <a href="#about">
                                    <div class="landing-call">
@@ -77,6 +80,7 @@
                                    </div>
                               </a>
                          </div>
+
                          <div class="col-xs-12 bottom">
 
                               <a href="#about">
@@ -98,15 +102,19 @@
 
 
                               <a href="#skills">
-                                   <div> <img id="brain" src="images/Brain.jpg" alt=""></div>
+                                   <div class="brain_container"> <img id="brain" src="images/Brain.jpg" alt=""></div>
                               </a>
 
                          </div>
 
-                    </div>
-               </div>
+                    </div> <!-- End of row -->
+
+               </div> <!-- End of container -->
           </div>
-          <div class="section portfolio fp-section fp-tableCell" data-anchor="portfolio">
+
+          <!-- Section 2 -->
+          <div class="section portfolio fp-section"  data-anchor="portfolio">
+               <!-- Slide 1 -->
                <div class="slide slide-one">
                     <div class="container">
                          <div class="row">
@@ -117,8 +125,10 @@
                                    <h3 class="web_title">AlphaNote</h3>
                                    <br>
                                    <p class="web_desc">A simple cloud based ELN (electronic laboratory notebook) for research and academic use.</p>
-                                   <br>
-                                   <hr>
+                                        <div class="line">
+                                             <br>
+                                             <hr>
+                                        </div>
                                    <i class="fa fa-code fa-lg" aria-hidden="true"></i>
                                    <p class="web_desc_2">Front End: HTML5 + CSS3 + JavaScript + jQuery + Bootstrap</p>
                                    <p class="web_desc_2">Back End: Node + Express + MongoDB + Passport</p>
@@ -126,6 +136,7 @@
                          </div>
                     </div>
                </div>
+               <!-- Slide 2 -->
                <div class="slide slide-one">
                     <div class="container">
                          <div class="row">
@@ -136,8 +147,10 @@
                                    <h3 class="web_title">Bloom</h3>
                                    <br>
                                    <p class="web_desc">A smart water tracking application that includes a projection of watering usage based on current weather information and user based settings.</p>
-                                   <br>
-                                   <hr>
+                                        <div class="line">
+                                             <br>
+                                             <hr>
+                                        </div>
                                    <i class="fa fa-code fa-lg" aria-hidden="true"></i>
                                    <p class="web_desc_2">Front End: React + Redux + CSS3 + jQuery + Bootstrap</p>
                                    <p class="web_desc_2">Back End: Node + Express + MongoDB + Passport</p>
@@ -145,6 +158,7 @@
                          </div>
                     </div>
                </div>
+               <!-- Slide 3 -->
                <div class="slide slide-one">
                     <div class="container">
                          <div class="row">
@@ -155,8 +169,10 @@
                                    <h3 class="web_title">Symptom Checker</h3>
                                    <br>
                                    <p class="web_desc">An application designed to help you understand what your medical symptoms could mean and what condition you might have.</p>
-                                   <br>
-                                   <hr>
+                                        <div class="line">
+                                             <br>
+                                             <hr>
+                                        </div>
                                    <i class="fa fa-code fa-lg" aria-hidden="true"></i>
                                    <p class="web_desc_2">Front End:HTML5 + CSS3 + JavaScript + jQuery + AJAX</p>
                               </div>
@@ -164,6 +180,8 @@
                     </div>
                </div>
           </div>
+
+          <!-- Section 3 -->
           <div class="section about fp-section fp-table" data-anchor="about">
                <div class="container">
                     <h1 id="quote"> "Study the science of art. Study the art of science. Develope your senses - especially learn how to see." - Lenoardo da Vinci </h1>
@@ -175,7 +193,7 @@
                          </div>
                          <div class="col-md-8 text-left entrance">
 
-                              <p>Hi,I'm Charlotte. A cross-functional professional with a constructive attitude and a penchant for always learning something new.
+                              <p>Hello, I'm Charlotte. A cross-functional professional with a constructive attitude and a penchant for always learning something new.
                               I enjoy turning complex problems into simple, beautiful and intuitive applications. I enjoy exploring new libraries,frameworks, and getting front and back ends to play nicely.</p>
                               <div class="notmobile">
                                    <p>After 10 years as a scientist, I found my LOVE for coding after spending countless nights of data-handling and working with our department's horribly designed and "clunky" database tools. I wrote my own scripts using VBA
@@ -184,17 +202,19 @@
                                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Charlotte+Virtucio" target="_blank" class="change">
                                    <p>(Click here to check out my publications if you don't believe me.)</p>
                                    </a>
-                                   <p>I decided to follow my instincs and joined a fullstack development bootcamp where I have indulged in my new found love and learned HTML,CSS, and javascript (which I've termed the "gate-way drug" for coding languages).
+                                   <p>I decided to follow my instincs and joined a fullstack development bootcamp where I have indulged in my new found love and learned HTML,CSS, and javascript.
                                    </p>
                               </div>
                               <p>My main goal is to LEARN MORE languages, gain new skills, and create applications that can assist people in all walks of life.
                               </p>
-                              <p>It's my new calling...</p>
+                              <p class="notmobile">It's my new calling...</p>
                          </div>
                     </div>
                </div>
 
           </div>
+
+          <!-- Section 4 -->
 
           <div class="section skills fp-section fp-table skillset" data-anchor="skills">
                <div class="container">
@@ -203,42 +223,42 @@
                          <div class="pyramid">
                               <p> Hover over the pyramid to learn more about my skills.</p>
                               <br>
-                              <div class="pyramid-row">
+                              <div class="pyramid-row" onclick="">
                                    <div id="1" class=" thisonefirst level one">
                                         <span>Set<br>Up</span>
                                    </div>
                               </div>
-                              <div class="pyramid-row">
+                              <div class="pyramid-row" onclick="">
                                    <div id="2"class="numbertwo level two">
                                         <span>Front end</span>
                                    </div>
                               </div>
-                              <div class="pyramid-row">
+                              <div class="pyramid-row" onclick="">
                                    <div id="3"class="numberthree level three">
                                         <span>Libraries</span>
                                    </div>
                               </div>
-                              <div class="pyramid-row">
+                              <div class="pyramid-row" onclick="">
                                    <div id="4"class="numberfour level four">
                                         <span>Backend Languages</span>
                                    </div>
                               </div>
-                              <div class="pyramid-row">
+                              <div class="pyramid-row" onclick="">
                                    <div id="5"class="numberfive level five">
                                         <span>Frameworks</span>
                                    </div>
                               </div>
-                              <div class="pyramid-row">
+                              <div class="pyramid-row" onclick="">
                                    <div id="6"class="numbersix level six">
                                         <span>Databases</span>
                                    </div>
                               </div>
-                              <div class="pyramid-row">
+                              <div class="pyramid-row" onclick="">
                                    <div id="7"class="numberseven level seven">
                                         <span>Packaging Systems</span>
                                    </div>
                               </div>
-                              <div class="pyramid-row">
+                              <div class="pyramid-row" onclick="">
                                    <div id="8"class="numbereight level eight">
                                         <span>Deployment</span>
                                    </div>
@@ -316,7 +336,9 @@
                </div>
           </div>
 
-          <div class="section contact" data-anchor="contact" id="contacts">
+          <!-- Section 5 -->
+
+          <div class="section contact" id="contacts" data-anchor="contact">
                <div class="container ">
 
                     <div class="row">

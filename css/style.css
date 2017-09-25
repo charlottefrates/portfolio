@@ -28,25 +28,32 @@ body {
 }
 
 .landing-call {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
+  position: absolute;
+  z-index: 2;
+  margin-left: 5%;
+  width: 80%;
+  transform: scale(1);
+  transition: .3s ease-in-out;
 }
 
 .landing-call:hover {
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
+    z-index: 3;
 }
 
+.text{
+  font-size: 100% !important;
+}
 .landing-call h1 {
     font-family: 'Playfair Display SC', serif;
-    font-size: 50pt;
+    font-size: 355%;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     margin-top: 12%;
     left: 20%;
+    z-index: 3;
 }
 
 .landing-call p{
@@ -226,23 +233,31 @@ margin-top: 5%;
     animation-iteration-count: 1;
 }
 
+.brain_container{
+    position: absolute;
+    width: 65%;
+    margin-left: 11%;
+    margin-top: 18%;
+
+}
 
 #brain{
-      height: 850px;
-      margin-top: 18%;
-          margin-right: 7%;
+  height: 100%;
+  width: 100%;
+  padding: 0;
 }
 
 #scientist{
-float: left;
-margin-top: 33%;
-opacity: 1;
-position: absolute;
-width: 250px;
-height: 600px;
-animation-duration: 1s;
-animation-delay: 0s;
-animation-iteration-count: 1;
+  float: left;
+  margin-top: 33%;
+  opacity: 1;
+  position: absolute;
+  width: 20%;
+  height: 30%;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  z-index: 1;
 }
 
 #sci:hover {
@@ -261,15 +276,16 @@ animation-iteration-count: 1;
 */
 
 #coder-desc{
-margin-left: 72%;
-margin-top: 33%;
-opacity: 1;
-position: absolute;
-width: 300px;
-height: 600px;
-animation-duration: 2s;
-animation-delay: 0s;
-animation-iteration-count: 1;
+  margin-left: 72%;
+  margin-top: 33%;
+  opacity: 1;
+  position: absolute;
+  width: 20%;
+  height: 30%;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  z-index: 1;
 
 }
 
@@ -751,7 +767,7 @@ nav ul li {
      text-align: left;
      padding: 32px 12px;
      cursor: pointer;
-     display: none;
+     display: none;b
      color: white;
 }
 
@@ -796,23 +812,23 @@ nav ul li {
 }
 
 
-
+/* Phone - portrait view */
 @media (max-width: 450px){
   .landing-call h1 {
     font-family: 'Playfair Display SC', serif;
-    font-size: 18pt;
+    font-size: 19pt;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30%;
-    left: 16%;
+    margin-top: 50%;
+    left: 10%;
 }
 
   #brain {
-      height: 450px;
-      margin-top: 38%;
-      margin-left: -13%;
-      margin-right: auto;
+    width: 208%;
+    margin-top: 38%;
+    margin-left: -53%;
+    margin-right: auto;
   }
 
   #scientist-desc{
@@ -834,6 +850,7 @@ nav ul li {
 .bloom{
   margin-top: 20%;
 }
+
 .web_title{
   font-weight: bold;
 color: black;
@@ -863,7 +880,13 @@ text-align: center;
 }
 
 .prof-shot{
-  display: none;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10%;
+  margin-bottom: 19%;
+  width: 42%;
 }
 
 .entrance {
@@ -908,6 +931,165 @@ text-align: center;
   display: none;
 }
 
+
+
+}
+
+
+
+/* Phone - landscape view */
+
+@media screen and (max-width: 951px) and (min-width: 550px){
+
+  nav ul {
+       max-height: 0;
+  }
+  .showing {
+       height: 500px;
+       max-height: 23em;
+  }
+  nav ul li {
+       width: 100%;
+       padding: 15px;
+  }
+  .handle {
+       display: block;
+  }
+
+  .landing-call h1 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 214%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14%;
+    left: 20%;
+    z-index: 3;
+}
+
+.brain_container {
+    position: absolute;
+    width: 38%;
+    margin-left: 27%;
+    margin-top: 18%;
+}
+
+#scientist {
+    float: left;
+    margin-top: 24%;
+    margin-left: 7%;
+    position: absolute;
+    width: 20%;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    z-index: 1;
+    font-size: 68%;
+}
+
+#sci{
+  font-size: 186%;
+}
+
+#code{
+  font-size: 154%;
+}
+
+#coder-desc {
+    margin-left: 66%;
+    margin-top: 24%;
+    position: absolute;
+    width: 20%;
+    height: 30%;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    z-index: 1;
+    font-size: 68%;
+}
+
+.websites {
+    width: 51%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+.bloom {
+    margin-top: 10%;
+}
+
+
+.web_title{
+display: none;
+}
+
+.web_desc{
+display: none;
+
+}
+
+.web_desc_2{
+display: none;
+
+}
+
+.line{
+  display: none !important;
+}
+
+.fa-code{
+  display: none !important;
+}
+
+#quote {
+    margin-top: 12%;
+    font-size: 14pt;
+}
+
+.prof-shot{
+  display: none;
+}
+
+
+.entrance {
+    color: black;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    font-size: 10pt;
+    margin-top: -2%;
+    text-align: center;
+}
+
+.notmobile{
+  display: none;
+}
+
+.mobile_skills {
+    display: inline-block;
+    text-align: center;
+    margin-left: 16%;
+    margin-top: 4%;
+    margin-right: auto;
+    width: 62%;
+}
+
+.mobile_skills li{
+  display: inline-block;
+  padding: 11px;
+}
+
+.contact-list{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 5pt;
+}
+
+.pyramid{
+  display: none;
+}
 
 
 }
