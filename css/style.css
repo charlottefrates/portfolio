@@ -986,6 +986,18 @@ nav ul li {
 /* ================================= MEDIA QUERY: NAVIGATION =================================*/
 
 @media only screen and (max-width: 660px) {
+
+     nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 5;
+    box-shadow:none;
+     }
+
+
      nav ul {
           max-height: 0;
      }
