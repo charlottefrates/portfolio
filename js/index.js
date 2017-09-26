@@ -29,7 +29,7 @@ $('.handle').on('click', function(event) {
 $(document).ready(function() {
 
      $('#fullpage').fullpage({
-          sectionsColor: ['#f9f9f7', '#f9f9f7', '#e3ecf5', '#f9f9f7', '#e3ecf5'],
+          sectionsColor: ['#f9f9f7', '#f9f9f7', '#e3ecf5', 'white', '#e3ecf5'],
           anchors: ['home','portfolio', 'about', 'skills', 'contact'],
           menu: '#menu',
           easing: 'easeInCirc',
@@ -49,9 +49,8 @@ $(document).ready(function() {
                $('#8').removeClass('animated pulse');
           },
           afterLoad: function(anchorLink, index) {
-
                if (anchorLink == 'about') {
-                    $('.entrance').addClass('animated fadeIn');
+                    //$('.entrance').addClass('animated fadeIn');
                     $('#quote').addClass('animated pulse');
                }
                if (anchorLink == 'skills') {
@@ -65,6 +64,7 @@ $(document).ready(function() {
                     $('#8').addClass('animated pulse');
 
                }
+
 
           },
           afterRender: function() {
