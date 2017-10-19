@@ -454,6 +454,12 @@ footer.row {
 background-size: 60px;
 color: #fffefd;
 }
+
+.weird{
+  background: #f9f9f7;
+    background-size: 60px;
+    color: black;
+}
 .bg-star-g {
   background-size: 60px;
   color: #fffefd;
