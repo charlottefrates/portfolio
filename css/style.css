@@ -198,6 +198,7 @@ footer.row {
 .modal-content {
   background-color: #fffefd;
   border: none;
+  box-shadow: 0 3px 6px rgba(8,33,30,0.2);
 }
 .modal-body {
   padding: 30px;
