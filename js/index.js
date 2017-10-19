@@ -1,9 +1,14 @@
-'use strict';
+/*jslint browser:true */
+
 
 var str = "Charlotte Frates"
 var splitstr = str.split('');
 var timeInterval = 150;
+var i = 0;var str = "Charlotte Frates"
+var splitstr = str.split('');
+var timeInterval = 150;
 var i = 0;
+
 /* ================================= RESPONSIVE NAVIGATION =================================*/
 
 $('.handle').on('click', function(event) {
@@ -26,66 +31,6 @@ $('.handle').on('click', function(event) {
 });
 
 
-$(document).ready(function() {
-
-     $('#fullpage').fullpage({
-          sectionsColor: ['#f9f9f7', '#f9f9f7', '#e3ecf5', 'white', '#e3ecf5'],
-          anchors: ['home','portfolio', 'about', 'skills', 'contact'],
-          menu: '#menu',
-          easing: 'easeInCirc',
-          resize: false,
-          scrollingSpeed: 1000,
-
-          onLeave: function(index, nextIndex, direction) {
-
-               $('#quote').removeClass('animated pulse');
-               $('#1').removeClass('animated bounce');
-               $('#2').removeClass('animated shake');
-               $('#3').removeClass('animated shake');
-               $('#4').removeClass('animated shake');
-               $('#5').removeClass('animated rubberBand');
-               $('#6').removeClass('animated rubberBand');
-               $('#7').removeClass('animated rubberBand');
-               $('#8').removeClass('animated pulse');
-          },
-          afterLoad: function(anchorLink, index) {
-               if (anchorLink == 'about') {
-                    //$('.entrance').addClass('animated fadeIn');
-                    $('#quote').addClass('animated pulse');
-               }
-               if (anchorLink == 'skills') {
-                    $('#1').addClass('animated bounce');
-                    $('#2').addClass('animated shake');
-                    $('#3').addClass('animated shake');
-                    $('#4').addClass('animated shake');
-                    $('#5').addClass('animated rubberBand');
-                    $('#6').addClass('animated rubberBand');
-                    $('#7').addClass('animated rubberBand');
-                    $('#8').addClass('animated pulse');
-
-               }
-
-
-          },
-          afterRender: function() {
-               $('#quote').addClass('animated pulse');
-               $('#1').addClass('animated bounce');
-               $('#2').addClass('animated shake');
-               $('#3').addClass('animated shake');
-               $('#4').addClass('animated shake');
-               $('#5').addClass('animated rubberBand');
-               $('#6').addClass('animated rubberBand');
-               $('#7').addClass('animated rubberBand');
-               $('#8').addClass('animated pulse');
-          }
-
-     });
-
-     type();
-
-
-});
-
 /*============================================
 Name Typing Animation
 ==============================================*/
@@ -101,100 +46,105 @@ function type() {
      }
 }
 
-/*============================================
-Pyramid Hover effects
-==============================================*/
+$(document).ready(function () {
+	var $body = $('body');
+	var $navbar = $('.navbar-default');
+	var $offsetY = $navbar.offset().top + 10;
+	var $menuButton = $('button.navbar-toggle');
+	var $menuIcon = $('.navbar-toggle .glyphicon');
+	var $collapsedMenuItem = $('.navbar-collapse.collapse li');
+	var $modalBackdropDiv = $('<div class="modal-backdrop fade in"></div>');
+	var $scrollButton = $('.scroll');
+	var $socialIcon = $('.social');
 
-$('#1').hover(
-     function() {
-          $('#atomtext').removeClass('hidden');
-          $('#sublimetext').removeClass('hidden');
-          $('#github').removeClass('hidden');
-     },
-     function() {
-          $('#atomtext').addClass('hidden');
-          $('#sublimetext').addClass('hidden');
-          $('#github').addClass('hidden');
-     }
-);
+	type();
 
-$('#2').hover(
-     function() {
-          $('#javascript').removeClass('hidden');
-          $('#html').removeClass('hidden');
-          $('#css').removeClass('hidden');
-     },
-     function() {
-          $('#javascript').addClass('hidden');
-          $('#html').addClass('hidden');
-          $('#css').addClass('hidden');
-     }
-);
+	// Fixed Nav after scroll
+	function scroll() {
+		if ($(window).scrollTop() >= $offsetY) {
+			$navbar.addClass('menu-fixed').css('background-color', 'rgba(255,254,253,0.97)');
+		} else {
+			$navbar.removeClass('menu-fixed').css('background-color', 'transparent');
+		}
+	}
+	document.onscroll = scroll;
 
-$('#3').hover(
-     function() {
-          $('#jquery').removeClass('hidden');
-          $('#bootstrap').removeClass('hidden');
-     },
-     function() {
-          $('#jquery').addClass('hidden');
-          $('#bootstrap').addClass('hidden');
-     }
-);
+	// Mobile Menu functions
+	function openMenu() {
+		$menuIcon.removeClass('glyphicon-menu-hamburger').addClass('glyphicon-remove active');
+		$modalBackdropDiv.css('z-index', 900);
+		$body.append($modalBackdropDiv);
+		if (!$navbar.hasClass('menu-fixed')) {
+			$navbar.css('background-color', 'rgba(255,254,253,0.97)');
+		}
+		// Close menu after clicking modal-backdrop
+		$modalBackdropDiv.on('click', function () {
+			$('.navbar-toggle').click();
+			closeMenu();
+		});
+	}
+	function closeMenu() {
+		$menuIcon.removeClass('glyphicon-remove active').addClass('glyphicon-menu-hamburger');
+		$modalBackdropDiv.css('z-index', 1025).remove();
+		if (!$navbar.hasClass('menu-fixed')) {
+			$navbar.css('background-color', 'transparent');
+		}
+	}
+	// Mobile Menu Icon Toggle
+	$menuButton.on('click', function () {
+		if ($menuIcon.hasClass('glyphicon-menu-hamburger')) {
+			openMenu();
+			// Close menu after clicking a link
+			$collapsedMenuItem.on('click', function () {
+				$('.navbar-toggle').click(); // Trigger collapse animation
+				closeMenu();
+			});
+		} else {
+			closeMenu();
+		}
+	});
+	// Collapse menu on resize
+	$(window).resize(closeMenu());
 
-$('#4').hover(
-     function() {
-          $('#javascript2').removeClass('hidden');
-     },
-     function() {
-          $('#javascript2').addClass('hidden');
-     }
-);
+	// Smooth scroll to content
+	$scrollButton.on('click', function (e) {
+		e.preventDefault();
+		var $link = $(this).attr('href');
+		$('html, body').animate({
+			scrollTop: $($link).offset().top - 60
+		}, 900);
+	});
 
-$('#5').hover(
-     function() {
-          $('#react').removeClass('hidden');
-          $('#redux').removeClass('hidden');
-          $('#node').removeClass('hidden');
-          $('#mocha').removeClass('hidden');
-          $('#travis').removeClass('hidden');
-     },
-     function() {
-          $('#react').addClass('hidden');
-          $('#redux').addClass('hidden');
-          $('#node').addClass('hidden');
-          $('#mocha').addClass('hidden');
-          $('#travis').addClass('hidden');
-     }
-);
+	// Social icons hover effect
+	$socialIcon.on({
+		'focus mouseenter': function () {
+			var $iconImg = $(this).children();
+			var $href = $iconImg.attr('src').slice(0, -18) + 'color.png?raw=true'; // Remove 'black.svg' from end and add 'color.svg'
+			$iconImg.attr('src', $href);
+		},
+		'blur mouseleave': function () {
+			var $iconImg = $(this).children();
+			var $href = $iconImg.attr('src').slice(0, -18) + 'black.png?raw=true';
+			$iconImg.attr('src', $href);
+		}
+	});
 
-$('#6').hover(
-     function() {
-          $('#mongo').removeClass('hidden');
-          $('#mongoose').removeClass('hidden');
-     },
-     function() {
-          $('#mongo').addClass('hidden');
-          $('#mongoose').addClass('hidden');
-     }
-);
+	// Center modals vertically
+	function centerModal() {
+    $(this).css('display', 'block');
+    var $dialog = $(this).find('.modal-dialog');
+    var $offset = ($(window).height() - $dialog.height()) / 2;
+    var $bottomMargin = parseInt($dialog.css('margin-bottom'), 10);
 
-$('#7').hover(
-     function() {
-          $('#npm').removeClass('hidden');
-     },
-     function() {
-          $('#npm').addClass('hidden');
-     }
-);
+    // If modal is taller than screen height, top margin = bottom margin
+    if ($offset < $bottomMargin) {
+    	$offset = $bottomMargin;
+    }
+    $dialog.css('margin-top', $offset);
+  }
 
-$('#8').hover(
-     function() {
-          $('#heroku').removeClass('hidden');
-          $('#netlify').removeClass('hidden');
-     },
-     function() {
-          $('#heroku').addClass('hidden');
-          $('#netlify').addClass('hidden');
-     }
-);
+  $(document).on('show.bs.modal', '.modal', centerModal);
+  $(window).on('resize', function () {
+    $('.modal:visible').each(centerModal);
+  });
+});

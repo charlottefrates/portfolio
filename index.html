@@ -1,180 +1,108 @@
 <!DOCTYPE html>
 <html >
-
 <head>
-     <meta charset="UTF-8">
-     <title>Charlotte Frates</title>
-     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta description="Site description">
+  <meta charset="UTF-8">
+  <title>Personal Portfolio Page</title>
+  <title>Charlotte Frates | Scientist &amp; Full Stack Developer</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Unica+One%7CWork+Sans:300,600" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
 
-     <!-- ==============================================
-     Fonts
-     =============================================== -->
+<link rel="stylesheet" href="css/style.css">
 
-     <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC|Roboto" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="57x57" href="images/favicon.ico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/favicon.ico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/favicon.ico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/favicon.ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/favicon.ico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/favicon.ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/favicon.ico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/favicon.ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon.ico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/favicon.ico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/favicon.ico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="images/favicon.ico/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
 
-     <!-- ==============================================
-     Other CDNs
-     =============================================== -->
-
-     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css" />
-     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
-
-
-     <!-- ==============================================
-     Favicons
-     =============================================== -->
-     <link rel="shortcut icon" href="images/favicon.png">
-     <link rel="apple-touch-icon" href="images/touch-icon-iphone.png">
-     <link rel="apple-touch-icon" sizes="72x72" href="images/touch-icon-ipad.png">
-     <link rel="apple-touch-icon" sizes="114x114" href="images/touch-icon-iphone-retina.png">
-     <link rel="apple-touch-icon" sizes="144x144" href="images/touch-icon-ipad-retina.png">
-
-     <!-- ==============================================
-     Custom Styles
-     =============================================== -->
-
-     <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="css/styles-blue.css">
 
 </head>
 
-<body class="fp-responsive">
-     <section id="navbar">
-          <nav class="navigator">
-               <ul>
-                    <div class="container">
-                              <ul id="menu"class="nav navbar-nav navbar-right">
-                                   <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
-                                   <li data-menuanchor="portfolio"><a href="#portfolio">Portfolio</a></li>
-                                   <li data-menuanchor="about"><a href="#about">About</a></li>
-                                   <li data-menuanchor="skills" class="skillnav"><a href="#skills">Skills</a></li>
-                                   <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
-                              </ul>
-                    </div>
-               </ul>
-               <div class="handle"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
-          </nav>
-     </section>
+<body>
+  <body data-spy="scroll" data-target="#main-nav" data-offset="60">
+  <!-- Fixed Navbar -->
+  <nav id="main-nav" class="navbar navbar-default navigator ">
+      <!-- Collapsible Menu -->
+      <div id="menu">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a class="scroll" href="#top">Home <span class="sr-only">(current)</span></a></li>
+          <li><a class="scroll" href="#about">About Me</a></li>
+          <li><a class="scroll" href="#portfolio">Portfolio</a></li>
+          <li><a class="scroll" href="#skills">Skills</a></li>
+          <li><a class="scroll" href="#contact">Contact</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
 
-     <div id="fullpage">
-          <!-- Section 1 -->
-          <div class="section home fp-section fp-table"  data-anchor="home">
-               <div class="container">
-                    <div class="row">
+      <div class="handle"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
 
-                         <div class="col-xs-12 bottom">
-                              <a href="#home">
-                                   <div class="landing-call">
-                                        <h1 id="text">
-                                             <span class="text"></span>
-                                              <span class="blinking bold">|</span>
-                                        </h1>
-                                   </div>
-                              </a>
-                         </div>
 
-                         <div class="col-xs-12 bottom">
-                              <a href="#about">
-                                   <div id="scientist" class=" animated slideInDown scientist" style="opacity: 1;">
-                                        <div id="scientist-desc" class="description" style="opacity: 1;">
-                                             <h1 id="sci" class="">scientist</h1>
-                                             <p id="show1">Hypothesis experimention and results.</p>
-                                        </div>
-                                   </div>
-                              </a>
-                              <a href="#portfolio">
-                                   <div id="coder-desc" class="animated slideInDown description" style="opacity: 1;">
-                                        <h1 id="code" class="">&lt;fullstack dev&gt;</h1>
-                                        <p id="show2">Coding one $('.button').click() <br>at a time.</p>
-                                   </div>
-                              </a>
-                              <a href="#skills">
-                                   <div class="brain_container"> <img id="brain" src="images/Brain.jpg" alt=""></div>
-                              </a>
-                         </div>
+    </div><!-- /.container-fluid -->
+  </nav>
+  <!-- Jumbotron -->
+  <header id="top" class="jumbotron">
 
-                    </div> <!-- End of row -->
+    <div class="col-xs-12 bottom">
+         <a href="#home">
+              <div class="landing-call">
+                   <h1 id="text">
+                        <span class="text"></span>
+                         <span class="blinking bold">|</span>
+                   </h1>
+              </div>
+         </a>
+    </div>
 
-               </div> <!-- End of container -->
 
-          </div>
-          <!-- Section 2 -->
-          <div class="section portfolio landing fp-section fp-table" id="name" data-anchor="portfolio" >
-               <!-- Slide 1 -->
-               <div class="slide">
-                    <div class="container">
-                         <div class="row">
-                              <div class="col-md-6">
-                                   <a href="https://alpha-note.herokuapp.com/" target="_blank"><img class="img-responsive boxshadow websites" src="images/AlphaNote.jpg" ></a>
-                              </div>
-                              <div class="col-md-6 text-left">
-                                   <h3 class="web_title">AlphaNote</h3>
-                                   <br>
-                                   <p class="web_desc">A simple cloud based ELN (electronic laboratory notebook) for research and academic use.</p>
-                                        <div class="line">
-                                             <br>
-                                             <hr>
-                                        </div>
-                                   <i class="fa fa-code fa-lg" aria-hidden="true"></i>
-                                   <p class="web_desc_2">Front End: HTML5 + CSS3 + JavaScript + jQuery + Bootstrap</p>
-                                   <p class="web_desc_2">Back End: Node + Express + MongoDB + Passport</p>
-                              </div>
-                         </div>
+        <div class="col-xs-12 bottom">
+          <a href="#about">
+               <div id="scientist" class=" animated slideInDown scientist" style="opacity: 1;">
+                    <div id="scientist-desc" class="description" style="opacity: 1;">
+                         <h1 id="sci" class="">scientist</h1>
+                         <p id="show1">Hypothesis experimention and results.</p>
                     </div>
                </div>
-               <!-- Slide 2 -->
-               <div class="slide">
-                    <div class="container">
-                         <div class="row">
-                              <div class="col-md-6">
-                                   <a href="https://bloom-water-tracker.herokuapp.com/" target="_blank"><img class="img-responsive boxshadow websites bloom" src="images/Bloom.png" ></a>
-                              </div>
-                              <div class="col-md-6 text-left">
-                                   <h3 class="web_title">Bloom</h3>
-                                   <br>
-                                   <p class="web_desc">A smart water tracking application that includes a projection of watering usage based on current weather information and user based settings.</p>
-                                        <div class="line">
-                                             <br>
-                                             <hr>
-                                        </div>
-                                   <i class="fa fa-code fa-lg" aria-hidden="true"></i>
-                                   <p class="web_desc_2">Front End: React + Redux + CSS3 + jQuery + Bootstrap</p>
-                                   <p class="web_desc_2">Back End: Node + Express + MongoDB + Passport</p>
-                              </div>
-                         </div>
-                    </div>
+          </a>
+          <a href="#portfolio">
+               <div id="coder-desc" class="animated slideInDown description" style="opacity: 1;">
+                    <h1 id="code" class="">&lt;fullstack dev&gt;</h1>
+                    <p id="show2">Coding one $('.button').click() <br>at a time.</p>
                </div>
-               <!-- Slide 3 -->
-               <div class="slide">
-                    <div class="container">
-                         <div class="row">
-                              <div class="col-md-6" id="symptom">
-                                   <a href="https://charlottefrates.github.io/symptom_checker/" target="_blank"> <img class="img-responsive boxshadow websites" src="images/SymptomChecker.jpg"> </a>
-                              </div>
-                              <div class="col-md-6 text-left">
-                                   <h3 class="web_title">Symptom Checker</h3>
-                                   <br>
-                                   <p class="web_desc">An application designed to help you understand what your medical symptoms could mean and what condition you might have.</p>
-                                        <div class="line">
-                                             <br>
-                                             <hr>
-                                        </div>
-                                   <i class="fa fa-code fa-lg" aria-hidden="true"></i>
-                                   <p class="web_desc_2">Front End:HTML5 + CSS3 + JavaScript + jQuery + AJAX</p>
-                              </div>
-                         </div>
-                    </div>
-               </div>
+          </a>
+          <a href="#skills">
+               <div class="brain_container"> <img id="brain" src="images/Brain.jpg" alt=""></div>
+          </a>
+        </div>
 
-          </div>
-          <!-- Section 3 -->
-          <div class="section about fp-section fp-table" data-anchor="about">
-               <div class="container">
-                    <h1 id="quote"> "Study the science of art. Study the art of science. Develope your senses - especially learn how to see." - Lenoardo da Vinci </h1>
+
+  </header>
+  <!-- Main Content Begins -->
+  <div id="content" class="container-fluid text-center">
+    <!-- About Me Section -->
+    <section id="about" class="row bg-white bg-shadow">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="mb-30">About Me</h1>
+        </div>
+      </div>
+      <div class="container">
+                    <h1 id="quote" class="animated pulse"> "Study the science of art. Study the art of science. Develope your senses - especially learn how to see." - Lenoardo da Vinci </h1>
                     <br>
                     <br>
                     <div class="row">
@@ -195,165 +123,383 @@
                                    <p>I decided to follow my instincs and joined a fullstack development bootcamp where I have indulged in my new found love and learned HTML,CSS, and javascript.
                                    </p>
                               </div>
-                              <p>My main goal is to LEARN MORE languages, gain new skills, and create applications that can assist people in all walks of life.
-                              </p>
-                              <p class="notmobile">It's my new calling...</p>
+                              <div class="notmobile">
+                                                     <p>My main goal is to LEARN MORE languages, gain new skills, and create applications that can assist people in all walks of life.</p>
+                                                     <p>It's my new calling...</p>
+
+                              </div>
                          </div>
                     </div>
                </div>
-
-          </div>
-
-          <!-- Section 4 -->
-
-          <div class="section skills fp-section fp-table skillset" data-anchor="skills">
-               <div class="container">
-                         <div class="image-wrapper">
-                                <div class="image-item insta-page">
-                                   <a class="image insta-image" >
-                                        <img class="logos" src="images/html-5-icon.png" alt="HTML5">
-                                    </a>
-                                 </div>
-
-                                <div class="image-item insta-page">
-                                   <a class="image insta-image" >
-                                        <img class="logos" src="images/css-3-icon.png" alt="CSS3">
-                                    </a>
-                                 </div>
-
-                                 <div class="image-item insta-page">
-                                   <a class="image insta-image" >
-                                        <img class="logos" src="images/javascript_logo.jpg" alt="Javascript w/ES7">
-                                    </a>
-                                 </div>
-
-                                 <div class="image-item insta-page">
-                                   <a class="image insta-image" >
-                                        <img class="logos" src="images/node_logo.jpg" alt="Node.js">
-                                    </a>
-                                 </div>
-
-                                 <div class="image-item insta-page">
-                                   <a class="image insta-image" >
-                                        <img class="logos" src="images/react.png" alt="React and React Native">
-                                    </a>
-                                 </div>
-
-                                 <div class="image-item insta-page">
-                                   <a class="image insta-image">
-                                        <img class="logos" src="images/redux.jpg" alt="Redux">
-                                    </a>
-                                 </div>
-
-                                 <div class="image-item insta-page">
-                                   <a class="image insta-image">
-                                        <img class="logos" src="images/mongodb-logo.png" alt="MongoDB">
-                                    </a>
-                                 </div>
-
-                                 <div class="image-item insta-page">
-                                   <a class="image insta-image">
-                                        <img class="logos" src="images/mocha_logo.png" alt="Mocha">
-                                    </a>
-                                 </div>
-
-                                 <div class="image-item insta-page">
-                                   <a class="image insta-image">
-                                        <img class="logos" src="images/travisci_logo.png" alt="Travis">
-                                    </a>
-                                 </div>
-
-                                 <div class="image-item insta-page">
-                                  <a class="image insta-image">
-                                       <img class="logos" src="images/express_logo.png" alt="Express">
-                                   </a>
-                                </div>
-
-                                <div class="image-item insta-page">
-                                  <a class="image insta-image">
-                                       <img class="logos" src="images/passport_logo.jpg" alt="Passport">
-                                   </a>
-                                </div>
-
-                                <div class="image-item insta-page">
-                                  <a class="image insta-image">
-                                       <img class="logos" src="images/github_logo.jpg" alt="Git + Github">
-                                   </a>
-                                </div>
-
-                         </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <button class="btn td-btn outline green mt-30"><a href="https://drive.google.com/file/d/0BwBJa_glPC_kRC1GR3Y3M1Y3Vmc/view?usp=sharing" target="_blank">View my Resume</a></button>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="row bg-star-y">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="mb-60">Portfolio</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div id="projects" class="carousel slide col-xs-12" data-ride="carousel" data-interval="false">
+          <div class="row">
+            <!-- Carousel Prev Button -->
+            <div class="col-xs-1">
+              <a class="left carousel-control" href="#projects" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </div>
+            <div class="col-xs-10">
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <div class="col-sm-7">
+                    <img class="img-responsive center-block mb-30" src="images/AlphaNote.jpg" alt="Alpha-Note">
+                  </div>
+                  <div class="col-sm-5">
+                    <div class="carousel-caption card">
+                      <h3>AlphaNote</h3>
+                      <h4>A simple cloud based ELN (electronic laboratory notebook) for research and academic use.</h4>
+                      <button class="btn td-btn small outline green" data-toggle="modal" data-target="#alphaNote">View Details</button>
                     </div>
-          </div>
-
-          <!-- Section 5 -->
-
-          <div class="section contact" id="contacts" data-anchor="contact">
-               <div class="container ">
-
-                    <div class="row">
-
-                         <div class="col-xs-12">
-                              <h1 class=" animation big-text orange wow fadeInDown text-center" data-wow-offset="100">
-                            <i class="fa fa-comments-o"></i>
-                            Contact Me
-                        </h1>
-                         </div>
-
-                         <div class="clear"></div>
-
-                         <!--=== Contact info ===-->
-                         <div class="col-md-12 contact-info">
-                              <ul class="contact-list">
-                                   <li class="animation" data-wow-delay="0s">
-                                        <a id="mapLink" target="_blank" href="">
-                                    <i class="fa fa-map-marker"></i>
-                                    <span class="c">Sunnyvale, CA</span>
-                                </a>
-                                   </li>
-                                   <li class="animation" data-wow-delay="0s">
-                                        <a href="tel:9163404914">
-                                    <i class="fa fa-phone"></i>
-                                    <span class="c">916 340 4914</span>
-                                </a>
-                                   </li>
-                                   <li class="animation" data-wow-delay="0s">
-                                        <a href="mailto:charlottefrates@gmail.com">
-                                    <i class="fa fa-envelope"></i>
-                                    <span class="c">charlottefrates@gmail.com</span>
-                                </a>
-                                   </li>
-                                   <br>
-                                   <br>
-                                   <section class="list-inline animation">
-                                        <li>
-                                             <a href="https://www.linkedin.com/in/charlotte-frates-671bb511a/" target="_blank"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
-                                        </li>
-                                        <li>
-                                             <a href="https://github.com/charlottefrates" target="_blank"><i class="fa fa-github fa-fw fa-3x"></i></a>
-                                        </li>
-                                   </section>
-
-                              </ul>
-                         </div>
-                         <!--=== End Contact ===-->
-
+                  </div>
+                </div><!-- /.item -->
+                <div class="item">
+                  <div class="col-sm-7">
+                    <img class="img-responsive center-block mb-30" src="images/Bloom.png" alt="Bloom">
+                  </div>
+                  <div class="col-sm-5">
+                    <div class="carousel-caption card">
+                      <h3>Bloom</h3>
+                      <h4>Smart Water Tracker</h4>
+                      <button class="btn td-btn small outline green" data-toggle="modal" data-target="#tmsModal">View Details</button>
                     </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="col-sm-7">
+                    <img class="img-responsive center-block mb-30" src="images/SymptomChecker.jpg" alt="Symptom Checker">
+                  </div>
+                  <div class="col-sm-5">
+                    <div class="carousel-caption card">
+                      <h3>Symptom Checker</h3>
+                      <h4>Fast and easy diagnosis application.</h4>
+                      <button class="btn td-btn small outline green" data-toggle="modal" data-target="#rbModal">View Details</button>
+                    </div>
+                  </div>
+                </div><!-- /.item -->
+              </div><!-- /.carousel-inner -->
+            </div>
+            <div class="col-xs-1">
+              <!-- Carousel Next Button -->
+              <a class="right carousel-control" href="#projects" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div><!-- / Next Btn -->
+            <div class="col-xs-12">
+              <!-- Indicators -->
+              <ol class="carousel-indicators mt-30">
+                <li data-target="#projects" data-slide-to="0" class="active"></li>
+                <li data-target="#projects" data-slide-to="1"></li>
+                <li data-target="#projects" data-slide-to="2"></li>
+              </ol>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /#projects -->
+      </div><!-- /.row -->
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="row bg-shadow">
+      <div class="col-xs-12">
+        <h1 class="mb-30">These Are My Skills</h1>
+      </div>
+      <div class="col-xs-12">
+        <div class="container">
+                  <div class="image-wrapper">
+                         <div class="image-item insta-page">
+                            <a class="image insta-image" >
+                                 <img class="logos" src="images/html-5-icon.png" alt="HTML5">
+                             </a>
+                          </div>
 
-               </div>
+                         <div class="image-item insta-page">
+                            <a class="image insta-image" >
+                                 <img class="logos" src="images/css-3-icon.png" alt="CSS3">
+                             </a>
+                          </div>
 
+                          <div class="image-item insta-page">
+                            <a class="image insta-image" >
+                                 <img class="logos" src="images/javascript_logo.jpg" alt="Javascript w/ES7">
+                             </a>
+                          </div>
+
+                          <div class="image-item insta-page">
+                            <a class="image insta-image" >
+                                 <img class="logos" src="images/node_logo.jpg" alt="Node.js">
+                             </a>
+                          </div>
+
+                          <div class="image-item insta-page">
+                            <a class="image insta-image" >
+                                 <img class="logos" src="images/react.png" alt="React and React Native">
+                             </a>
+                          </div>
+
+                          <div class="image-item insta-page">
+                            <a class="image insta-image">
+                                 <img class="logos" src="images/redux.jpg" alt="Redux">
+                             </a>
+                          </div>
+
+                          <div class="image-item insta-page">
+                            <a class="image insta-image">
+                                 <img class="logos" src="images/mongodb-logo.png" alt="MongoDB">
+                             </a>
+                          </div>
+
+                          <div class="image-item insta-page">
+                            <a class="image insta-image">
+                                 <img class="logos" src="images/mocha_logo.png" alt="Mocha">
+                             </a>
+                          </div>
+
+                          <div class="image-item insta-page">
+                            <a class="image insta-image">
+                                 <img class="logos" src="images/travisci_logo.png" alt="Travis">
+                             </a>
+                          </div>
+
+                          <div class="image-item insta-page">
+                           <a class="image insta-image">
+                                <img class="logos" src="images/express_logo.png" alt="Express">
+                            </a>
+                         </div>
+
+                         <div class="image-item insta-page">
+                           <a class="image insta-image">
+                                <img class="logos" src="images/passport_logo.jpg" alt="Passport">
+                            </a>
+                         </div>
+
+                         <div class="image-item insta-page">
+                           <a class="image insta-image">
+                                <img class="logos" src="images/github_logo.jpg" alt="Git + Github">
+                            </a>
+                         </div>
+
+                  </div>
+             </div>
+
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer id="contact" class="row text-center ">
+      <div class="col-xs-12">
+           <h1 class=" animation big-text orange wow fadeInDown text-center" data-wow-offset="100">
+         <i class="fa fa-comments-o"></i>
+         Contact Me
+     </h1>
+      </div>
+
+      <div class="clear"></div>
+
+      <div class="col-md-12 contact-info">
+           <ul class="contact-list">
+                <li class="animation" data-wow-delay="0s">
+                 <i class="fa fa-map-marker"></i>
+                 <span class="c">Sunnyvale, CA</span>
+             </a>
+                </li>
+                <li class="animation" data-wow-delay="0s">
+                     <a href="tel:9163404914">
+                 <i class="fa fa-phone"></i>
+                 <span class="c">916 340 4914</span>
+             </a>
+                </li>
+                <li class="animation" data-wow-delay="0s">
+                     <a href="mailto:charlottefrates@gmail.com">
+                 <i class="fa fa-envelope"></i>
+                 <span class="c">charlottefrates@gmail.com</span>
+             </a>
+                </li>
+                <br>
+                <br>
+                <section class="list-inline animation">
+                     <li>
+                          <a href="https://www.linkedin.com/in/charlotte-frates-671bb511a/" target="_blank"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                     </li>
+                     <li>
+                          <a href="https://github.com/charlottefrates" target="_blank"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                     </li>
+                     <li>
+                          <a href="https://drive.google.com/file/d/0BwBJa_glPC_kRC1GR3Y3M1Y3Vmc/view?usp=sharing" target="_blank"><i class="fa fa-file-text fa-fw fa-3x"></i></a>
+                     </li>
+                </section>
+
+           </ul>
+      </div>
+
+    </footer>
+  </div>
+
+
+  <!-- AlphaNote Page Project Modal -->
+  <div class="modal fade" id="alphaNote" tabindex="-1" role="dialog" aria-labelledby="tributeTitle">
+    <div class="modal-dialog wide" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="modal-title text-center" id="tributeTitle">Project Details</h3>
+        </div><!-- /.modal-header -->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-xs-12 bg-star-g">
+            </div>
           </div>
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <h2>AlphaNote</h2>
+              <h4>Electronic Lab Notebook</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 col-lg-6 col-lg-offset-0">
+            <p>Paper-based laboratory notebooks are the most widely used form of experimental data tracking in labs worldwide. It´s been around for several centuries (even da Vinci had one) and you will find it in the cabinet of every scientist. But does that necessarily imply that it´s also the most efficient way of recording scientific data? Lab books are becoming the bottlenecks in information management. This poses great repeatability threats, enormous costs and considerable limitations for knowledge sharing within an organization and the community.</p>
+            <p>To be fair, paper lab books seemed to have done the job pretty well so far and there are many features that make it great; e.g. they´re inexpensive and don’t require batteries to run. Yet there are only few things we haven´t modernized for over a century, let alone a millennium. Technological advances simply make things better and you won´t find anyone doing their taxes on an abacus.</p>
+            </div>
+            <div class="col-sm-10 col-sm-offset-1 col-lg-6 col-lg-offset-0 md-center">
+              <p><strong>Technologies Used:</strong></p>
+              <p class="mb-30">
+                <span class="label tag">HTML5</span>
+                <span class="label tag">CSS3</span>
+                <span class="label tag">JavaScript</span>
+                <span class="label tag">jQuery</span>
+                <span class="label tag">Node</span>
+                <span class="label tag">Express</span>
+                <span class="label tag">MongoDB</span>
+                <span class="label tag">Passport</span>
+                <span class="label tag">Mocha</span>
+                <span class="label tag">Travis</span>
+              </p>
+              <a class="btn td-btn outline green mb-30" href="https://alpha-note.herokuapp.com/" target="_blank" title="Link to Tribute Page"><span class="glyphicon glyphicon-link"></span> Visit Live Site</a>
+            </div>
+          </div><!-- /.row -->
+          <div class="modal-footer center">
+            <button type="button" class="btn td-btn outline small" data-dismiss="modal">Close Project</button>
+          </div><!-- /.modal-footer -->
+        </div><!-- /.modal-body -->
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 
-     </div>
+  <!-- Too Much Sauce Project Modal -->
+  <div class="modal fade" id="tmsModal" tabindex="-1" role="dialog" aria-labelledby="tmsTitle">
+    <div class="modal-dialog wide" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="modal-title text-center" id="tmsTitle">Project Details</h3>
+        </div><!-- /.modal-header -->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-xs-12 bg-star-g">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <h2>Bloom</h2>
+              <h4>Smart Water Tracker</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 col-lg-6 col-lg-offset-0">
+              <p>Water is necessary for the sustenance of human life. While the supply seems abundant, water is not a limitless resource, particularly the fresh potable water most necessary to human survival. Without conservation efforts, this vital supply of water may be exhausted. Conservation carries economic benefits as well, as energy and equipment are also conserved as a direct result of water preservation efforts.</p>
+              <p>Bloom is inteded to help with your water usage with time. It is a tracking application that includes a projection of watering usage based on current weather information and user based settings.</p>
 
-     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.fullpage/2.9.4/jquery.fullpage.extensions.min.js"></script>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            </div>
+            <div class="col-sm-10 col-sm-offset-1 col-lg-6 col-lg-offset-0 md-center">
+              <p><strong>Technologies Used:</strong></p>
+              <p class="mb-30">
+                <span class="label tag">React</span>
+                <span class="label tag">Redux</span>
+                <span class="label tag">CSS3</span>
+                <span class="label tag">JavaScript</span>
+                <span class="label tag">jQuery</span>
+                <span class="label tag">Node</span>
+                <span class="label tag">Express</span>
+                <span class="label tag">MongoDB</span>
+                <span class="label tag">Passport</span>
+                <span class="label tag">Jest</span>
+                <span class="label tag">Enzyme</span>
+                <span class="label tag">Mocha</span>
+                <span class="label tag">Travis</span>
+              </p>
+              <a class="btn td-btn outline green mb-30" href="https://bloom-water-tracker.herokuapp.com/" target="_blank" title="Link to Too Much Sauce"><span class="glyphicon glyphicon-link"></span> Visit Live Site</a>
+            </div>
+          </div><!-- /.row -->
+          <div class="modal-footer center">
+            <button type="button" class="btn td-btn outline small" data-dismiss="modal">Close Project</button>
+          </div><!-- /.modal-footer -->
+        </div><!-- /.modal-body -->
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/jquery.fullpage/2.9.4/jquery.fullpage.extensions.min.js"></script>
-
-     <script src="js/index.js"></script>
+  <!-- Ryan Bechtel Project Modal -->
+  <div class="modal fade" id="rbModal" tabindex="-1" role="dialog" aria-labelledby="rbTitle">
+    <div class="modal-dialog wide" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="modal-title text-center" id="rbTitle">Project Details</h3>
+        </div><!-- /.modal-header -->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-xs-12 bg-star-g">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <h2>Symptom Checker</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 col-lg-6 col-lg-offset-0">
+              <p>An application designed to help you understand what your medical symptoms could mean and what condition you might have.</p>
+              <p>While managing a busy schedule, it is often hard to visit a doctor right away, so the idea for creating a symptom checker that allows for a quick diagnosis came about. It is helpful to get a sense of what condition I might have in a quick and timely manner before discussing my symptoms with my primary doctor.</p>
+            </div>
+            <div class="col-sm-10 col-sm-offset-1 col-lg-6 col-lg-offset-0 md-center">
+              <p><strong>Technologies Used:</strong></p>
+              <p class="mb-30">
+                <span class="label tag">Responsive Design</span>
+                <span class="label tag">HTML5</span>
+                <span class="label tag">CSS3</span>
+                <span class="label tag">Javascript</span>
+                <span class="label tag">Jquery</span>
+                <span class="label tag">AJAX</span>
+              </p>
+              <a class="btn td-btn outline green mb-30" href="https://charlottefrates.github.io/symptom_checker/" target="_blank" title="Link to ryanbechtel.com"><span class="glyphicon glyphicon-link"></span> Visit Live Site</a>
+            </div>
+          </div><!-- /.row -->
+          <div class="modal-footer center">
+            <button type="button" class="btn td-btn outline small" data-dismiss="modal">Close Project</button>
+          </div><!-- /.modal-footer -->
+        </div><!-- /.modal-body -->
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 
 </body>
 
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script  src="js/index.js"></script>
+
+</body>
 </html>
