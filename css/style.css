@@ -354,7 +354,7 @@ footer.row {
 ===================== */
 #projects .carousel-control {
   background: none;
-  color: black;
+  color: #fffefd;
   font-size: 2rem;
   margin-top: 150%;
   opacity: 1;
@@ -438,7 +438,6 @@ footer.row {
 }
 .mb-60 {
   margin-bottom: 60px;
-  color: black;
 }
 .mt-30 {
   margin-top: 30px;
@@ -451,7 +450,7 @@ footer.row {
   position: relative;
 }
 .bg-star-y {
-  background: #f9f9f7;
+  background: #d4d2ce;
 background-size: 60px;
 color: #fffefd;
 }
