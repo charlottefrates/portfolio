@@ -111,7 +111,7 @@ $(document).ready(function () {
 		e.preventDefault();
 		var $link = $(this).attr('href');
 		$('html, body').animate({
-			scrollTop: $($link).offset().top - 50
+			scrollTop: $($link).offset().top -50
 		}, 900);
 	});
 
