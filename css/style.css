@@ -233,9 +233,9 @@ section.row, footer.row {
 }
 
 .modal-content {
-     background-color: #fffefd;
+     background-color: #fbfaf9;
      border: none;
-     box-shadow: 0 3px 6px rgba(8, 33, 30, 0.2);
+
 }
 
 .modal-body {
@@ -432,7 +432,7 @@ section.row, footer.row {
 
 #projects .carousel-control {
      background: none;
-     color: #fffefd;
+     color: black;
      font-size: 2rem;
      margin-top: 150%;
      opacity: 1;
@@ -536,6 +536,7 @@ section.row, footer.row {
 }
 
 .mb-60 {
+     color: black;
      margin-bottom: 60px;
 }
 
@@ -553,7 +554,7 @@ section.row, footer.row {
 }
 
 .bg-star-y {
-     background: #d4d2ce;
+     background: f9f9f7;
      background-size: 60px;
      color: #fffefd;
 }
