@@ -1,14 +1,15 @@
 /*jslint browser:true */
 
 
-var str = "Charlotte Frates"
-var splitstr = str.split('');
-var timeInterval = 150;
-var i = 0;
-var str = "Charlotte Frates"
-var splitstr = str.split('');
-var timeInterval = 150;
-var i = 0;
+
+let str = "Charlotte Frates"
+let splitstr = str.split('');
+let timeInterval = 150;
+let i = 0;
+let str = "Charlotte Frates"
+let splitstr = str.split('');
+let timeInterval = 150;
+let i = 0;
 
 /* ================================= RESPONSIVE NAVIGATION =================================*/
 
