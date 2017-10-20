@@ -141,10 +141,11 @@ hr {
   Jumbotron Styles
 ===================== */
 .jumbotron {
-  background: linear-gradient(rgb(249, 249, 247), rgb(249, 249, 247));
+background: linear-gradient(rgb(249, 249, 247), rgb(249, 249, 247));
 background-size: cover;
 height: 100%;
 margin: 0;
+margin-bottom: 100px;
 min-height: 510px;
 position: relative;
 width: 100%;
