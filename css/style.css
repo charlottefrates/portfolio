@@ -1423,7 +1423,7 @@ width: 100%;
     margin-top: 18%;
 }
 .navbar-default {
-  background-color: #f9f9f7 !important;
+  background-color: white !important;
     border: none;
     height: 63px;
     left: 0;
@@ -1598,11 +1598,11 @@ display: none;
    min-height: 510px;
    position: relative;
    width: 100%;
-   margin-bottom: 14% !important;
+   margin-bottom: 15% !important;
 }
 
 .navbar-default {
-    background-color: #f9f9f7 !important;
+    background-color: white !important;
     border: none;
     height: 63px;
     left: 0;
