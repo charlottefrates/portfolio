@@ -443,6 +443,9 @@ footer.row {
   margin-top: 30px;
 }
 .bg-shadow {
+  box-shadow: 0 1px 17px rgba(8,33,30,0.5);
+}
+.bg-shadow2{
   box-shadow: 0 1px 3px rgba(8,33,30,0.5);
 }
 .bg-white {
@@ -473,7 +476,7 @@ color: #fffefd;
 }
 
 footer{
-  background: white;
+  background: #d4d2ce;
 }
 
 /* =====================
@@ -947,7 +950,7 @@ nav ul li {
      text-align: left;
      padding: 32px 12px;
      cursor: pointer;
-     display: none;b
+     display: none;
      color: white;
 }
 
@@ -1208,11 +1211,6 @@ nav ul li {
     padding: 0;
 }
 
-.carousel-control{
-  display: none;
-}
-
-
      nav ul {
           max-height: 0;
      }
@@ -1379,7 +1377,6 @@ width: 100%;
 
 
 /* Phone - landscape view */
-
 @media screen and (max-width: 951px) and (min-width: 550px){
 
   nav ul {
@@ -1425,11 +1422,29 @@ width: 100%;
     margin-left: 27%;
     margin-top: 18%;
 }
+.navbar-default {
+  background-color: #f9f9f7 !important;
+    border: none;
+    height: 63px;
+    left: 0;
+    margin-bottom: 0;
+    margin-right: -11px;
+    padding: 0px;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-nav > li > a {
+    height: 18px;
+    line-height: 36px;
+    margin-top: 22px;
+}
 
 #scientist {
     float: left;
     margin-top: 24%;
-    margin-left: 7%;
+    margin-left: 6%;
     position: absolute;
     width: 20%;
     animation-duration: 1s;
@@ -1439,7 +1454,24 @@ width: 100%;
     font-size: 68%;
 }
 
+#code, #sci {
+    font-size: 18px;
+    text-align: center;
+}
 
+#show1, #show2{
+  text-align: center;
+  font-size: 10pt;
+}
+
+.landing-call {
+    position: absolute;
+    z-index: 2;
+    margin-left: 14%;
+    width: 80%;
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
 
 #coder-desc {
     margin-left: 66%;
@@ -1452,6 +1484,15 @@ width: 100%;
     animation-iteration-count: 1;
     z-index: 1;
     font-size: 68%;
+}
+
+#projects .carousel-inner img {
+    display: none;
+}
+
+#projects .card {
+    margin-top: 17%;
+    text-align: center;
 }
 
 .websites {
@@ -1535,7 +1576,52 @@ display: none;
     padding: 6px;
 }
 
+}
 
+@media (max-width: 1024px) and (min-width: 768px){
+  #content, #top{
+    margin-left: 2%;
+    margin-right: -125px;
+    margin-bottom: 0;
+  }
+  #projects .carousel-inner img {
+    display: block;
+    max-width: 480px;
+    width: 79%;
+    margin-top: 12%;
+ }
+ .jumbotron {
+   background: linear-gradient(rgb(249, 249, 247), rgb(249, 249, 247));
+   background-size: cover;
+   height: 53%;
+   margin: 0;
+   min-height: 510px;
+   position: relative;
+   width: 100%;
+   margin-bottom: 14% !important;
+}
+
+.navbar-default {
+    background-color: #f9f9f7 !important;
+    border: none;
+    height: 63px;
+    left: 0;
+    margin-bottom: 0;
+    margin-right: -11px;
+    padding: 0px;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+}
+
+.showing {
+    height: 262px;
+    max-height: 23em;
+    width: 117%;
+    padding-left: 5% !important;
+}
 
 
 }

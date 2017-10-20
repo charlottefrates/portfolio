@@ -62,7 +62,7 @@ $(document).ready(function () {
 	// Fixed Nav after scroll
 	function scroll() {
 		if ($(window).scrollTop() >= $offsetY) {
-			$navbar.addClass('menu-fixed').css('background-color', 'rgba(255,254,253,0.97)');
+			$navbar.css('background-color', 'white');
 		} else {
 			$navbar.removeClass('menu-fixed').css('background-color', 'transparent');
 		}
@@ -75,7 +75,7 @@ $(document).ready(function () {
 		$modalBackdropDiv.css('z-index', 900);
 		$body.append($modalBackdropDiv);
 		if (!$navbar.hasClass('menu-fixed')) {
-			$navbar.css('background-color', 'rgba(255,254,253,0.97)');
+			$navbar.css('background-color', 'white');
 		}
 		// Close menu after clicking modal-backdrop
 		$modalBackdropDiv.on('click', function () {
@@ -113,6 +113,8 @@ $(document).ready(function () {
 		$('html, body').animate({
 			scrollTop: $($link).offset().top - 50
 		}, 900);
+		$('.nav').removeClass('showing');
+		$('#main-nav').removeClass('showing');
 	});
 
 	// Social icons hover effect
